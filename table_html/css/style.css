@@ -1,5 +1,5 @@
 body {
-    padding-top: 40px;
+    padding-top: 60px;
 }
 
 section {
@@ -7,4 +7,5 @@ section {
 }
 
 table.table > tbody> tr> td {
+    text-align:center;
 }
