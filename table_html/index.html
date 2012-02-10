@@ -28,15 +28,16 @@
 
         <div class="container">
             <h3>About</h3>
-            <p>iOS5から利用できるunicode6な絵文字のキャプチャ画像とUTF-16での文字コードの対応表です。</p>
+            <p>iOS5から利用できるunicode6な絵文字のキャプチャ画像とUTF8,UTF16での文字コードの対応表です。</p>
             <p>iPadの絵文字キーボードと同じ順番に並んでいます。</p>
             <p>画像が多いので、GithubPagesでは分割版のhtmlにしています。統合版のhtmlは<a href="https://github.com/punchdrunker/iOSEmoji">masterブランチ</a>に入っているので、必要な方はそちらをご利用ください。</p>
-            <p><a href="emoji.json"><i class="icon-file"></i>JSON配列(ソート済み)はこちら</a></p>
+            <p><a href="emoji.json"><i class="icon-file"></i>JSON配列(ソート済み/UTF16)はこちら</a></p>
 
             <section id="smiley">
             <h3>Smiley</h3>
             <table class="table table-bordered">
                 <tr>
+                    <td></td>
                     <td><img src="smiles/smiles_01_01.png"></td>
                     <td><img src="smiles/smiles_01_02.png"></td>
                     <td><img src="smiles/smiles_01_03.png"></td>
@@ -51,6 +52,22 @@
                 </tr>
 
                 <tr>
+                    <td>UTF8</td>
+                    <td>0xF0 0x9F 0x98 0x84</td>
+                    <td>0xF0 0x9F 0x98 0x8A</td>
+                    <td>0xF0 0x9F 0x98 0x83</td>
+                    <td>0xE2 0x98 0xBA</td>
+                    <td>0xF0 0x9F 0x98 0x89</td>
+                    <td>0xF0 0x9F 0x98 0x8D</td>
+                    <td>0xF0 0x9F 0x98 0x98</td>
+                    <td>0xF0 0x9F 0x98 0x9A</td>
+                    <td>0xF0 0x9F 0x98 0xB3</td>
+                    <td>0xF0 0x9F 0x98 0x8C</td>
+                    <td>0xF0 0x9F 0x98 0x81</td>
+                </tr>
+
+                <tr>
+                    <td>UTF16</td>
                     <td>0xD83D 0xDE04</td>
                     <td>0xD83D 0xDE0A</td>
                     <td>0xD83D 0xDE03</td>
@@ -65,6 +82,7 @@
                 </tr>
 
                 <tr>
+                    <td></td>
                     <td><img src="smiles/smiles_02_01.png"></td>
                     <td><img src="smiles/smiles_02_02.png"></td>
                     <td><img src="smiles/smiles_02_03.png"></td>
@@ -79,6 +97,22 @@
                 </tr>
 
                 <tr>
+                    <td>UTF8</td>
+                    <td>0xF0 0x9F 0x98 0x9C</td>
+                    <td>0xF0 0x9F 0x98 0x9D</td>
+                    <td>0xF0 0x9F 0x98 0x92</td>
+                    <td>0xF0 0x9F 0x98 0x8F</td>
+                    <td>0xF0 0x9F 0x98 0x93</td>
+                    <td>0xF0 0x9F 0x98 0x94</td>
+                    <td>0xF0 0x9F 0x98 0x9E</td>
+                    <td>0xF0 0x9F 0x98 0x96</td>
+                    <td>0xF0 0x9F 0x98 0xA5</td>
+                    <td>0xF0 0x9F 0x98 0xB0</td>
+                    <td>0xF0 0x9F 0x98 0xA8</td> 
+                </tr>
+
+                <tr>
+                    <td>UTF16</td>
                     <td>0xD83D 0xDE1C</td>
                     <td>0xD83D 0xDE1D</td>
                     <td>0xD83D 0xDE12</td>
@@ -93,6 +127,7 @@
                 </tr>
 
                 <tr>
+                    <td></td>
                     <td><img src="smiles/smiles_03_01.png"></td>
                     <td><img src="smiles/smiles_03_02.png"></td>
                     <td><img src="smiles/smiles_03_03.png"></td>
@@ -107,6 +142,22 @@
                 </tr>
 
                 <tr>
+                    <td>UTF8</td>
+                    <td>0xF0 0x9F 0x98 0xA3</td>
+                    <td>0xF0 0x9F 0x98 0xA2</td>
+                    <td>0xF0 0x9F 0x98 0xAD</td>
+                    <td>0xF0 0x9F 0x98 0x82</td>
+                    <td>0xF0 0x9F 0x98 0xB2</td>
+                    <td>0xF0 0x9F 0x98 0xB1</td>
+                    <td>0xF0 0x9F 0x98 0xA0</td>
+                    <td>0xF0 0x9F 0x98 0xA1</td>
+                    <td>0xF0 0x9F 0x98 0xAA</td>
+                    <td>0xF0 0x9F 0x98 0xB7</td>
+                    <td>0xF0 0x9F 0x91 0xBF</td> 
+                </tr>
+
+                <tr>
+                    <td>UTF16</td>
                     <td>0xD83D 0xDE23</td>
                     <td>0xD83D 0xDE22</td>
                     <td>0xD83D 0xDE2D</td>
@@ -121,6 +172,7 @@
                 </tr>
 
                 <tr>
+                    <td></td>
                     <td><img src="smiles/smiles_04_01.png"></td>
                     <td><img src="smiles/smiles_04_02.png"></td>
                     <td><img src="smiles/smiles_04_03.png"></td>
@@ -135,6 +187,22 @@
                 </tr>
 
                 <tr>
+                    <td>UTF8</td>
+                    <td>0xF0 0x9F 0x91 0xBD</td>
+                    <td>0xF0 0x9F 0x92 0x9B</td>
+                    <td>0xF0 0x9F 0x92 0x99</td>
+                    <td>0xF0 0x9F 0x92 0x9C</td>
+                    <td>0xF0 0x9F 0x92 0x97</td>
+                    <td>0xF0 0x9F 0x92 0x9A</td>
+                    <td>0xE2 0x9D 0xA4</td>
+                    <td>0xF0 0x9F 0x92 0x94</td>
+                    <td>0xF0 0x9F 0x92 0x93</td>
+                    <td>0xF0 0x9F 0x92 0x98</td>
+                    <td>0xE2 0x9C 0xA8</td> 
+                </tr>
+
+                <tr>
+                    <td>UTF16</td>
                     <td>0xD83D 0xDC7D</td>
                     <td>0xD83D 0xDC9B</td>
                     <td>0xD83D 0xDC99</td>
@@ -149,6 +217,7 @@
                 </tr>
 
                 <tr>
+                    <td>UTF16</td>
                     <td><img src="smiles/smiles_05_01.png"></td>
                     <td><img src="smiles/smiles_05_02.png"></td>
                     <td><img src="smiles/smiles_05_03.png"></td>
@@ -163,6 +232,22 @@
                 </tr>
 
                 <tr>
+                    <td>UTF8</td>
+                    <td>0xF0 0x9F 0x8C 0x9F</td>
+                    <td>0xF0 0x9F 0x92 0xA2</td>
+                    <td>0xE2 0x9D 0x95</td>
+                    <td>0xE2 0x9D 0x94</td>
+                    <td>0xF0 0x9F 0x92 0xA4</td>
+                    <td>0xF0 0x9F 0x92 0xA8</td>
+                    <td>0xF0 0x9F 0x92 0xA6</td>
+                    <td>0xF0 0x9F 0x8E 0xB6</td>
+                    <td>0xF0 0x9F 0x8E 0xB5</td>
+                    <td>0xF0 0x9F 0x94 0xA5</td>
+                    <td>0xF0 0x9F 0x92 0xA9</td> 
+                </tr>
+
+                <tr>
+                    <td>UTF16</td>
                     <td>0xD83C 0xDF1F</td>
                     <td>0xD83D 0xDCA2</td>
                     <td>0x2755</td>
@@ -177,6 +262,7 @@
                 </tr>
 
                 <tr>
+                    <td></td>
                     <td><img src="smiles/smiles_06_01.png"></td>
                     <td><img src="smiles/smiles_06_02.png"></td>
                     <td><img src="smiles/smiles_06_03.png"></td>
@@ -189,8 +275,24 @@
                     <td><img src="smiles/smiles_06_10.png"></td>
                     <td><img src="smiles/smiles_06_11.png"></td>
                 </tr>
+                
+                <tr>
+                    <td>UTF8</td>
+                    <td>0xF0 0x9F 0x91 0x8D</td>
+                    <td>0xF0 0x9F 0x91 0x8E</td>
+                    <td>0xF0 0x9F 0x91 0x8C</td>
+                    <td>0xF0 0x9F 0x91 0x8A</td>
+                    <td>0xE2 0x9C 0x8A</td>
+                    <td>0xE2 0x9C 0x8C</td>
+                    <td>0xF0 0x9F 0x91 0x8B</td>
+                    <td>0xE2 0x9C 0x8B</td>
+                    <td>0xF0 0x9F 0x91 0x90</td>
+                    <td>0xF0 0x9F 0x91 0x86</td>
+                    <td>0xF0 0x9F 0x91 0x87</td> 
+                </tr>
 
                 <tr>
+                    <td>UTF16</td>
                     <td>0xD83D 0xDC4D</td>
                     <td>0xD83D 0xDC4E</td>
                     <td>0xD83D 0xDC4C</td>
@@ -205,6 +307,7 @@
                 </tr>
 
                 <tr>
+                    <td></td>
                     <td><img src="smiles/smiles_07_01.png"></td>
                     <td><img src="smiles/smiles_07_02.png"></td>
                     <td><img src="smiles/smiles_07_03.png"></td>
@@ -219,6 +322,22 @@
                 </tr>
 
                 <tr>
+                    <td>UTF8</td>
+                    <td>0xF0 0x9F 0x91 0x89</td>
+                    <td>0xF0 0x9F 0x91 0x88</td>
+                    <td>0xF0 0x9F 0x99 0x8C</td>
+                    <td>0xF0 0x9F 0x99 0x8F</td>
+                    <td>0xE2 0x98 0x9D</td>
+                    <td>0xF0 0x9F 0x91 0x8F</td>
+                    <td>0xF0 0x9F 0x92 0xAA</td>
+                    <td>0xF0 0x9F 0x9A 0xB6</td>
+                    <td>0xF0 0x9F 0x8F 0x83</td>
+                    <td>0xF0 0x9F 0x91 0xAB</td>
+                    <td>0xF0 0x9F 0x92 0x83</td> 
+                </tr>
+
+                <tr>
+                    <td>UTF16</td>
                     <td>0xD83D 0xDC49</td>
                     <td>0xD83D 0xDC48</td>
                     <td>0xD83D 0xDE4C</td>
@@ -233,6 +352,7 @@
                 </tr>
 
                 <tr>
+                    <td></td>
                     <td><img src="smiles/smiles_08_01.png"></td>
                     <td><img src="smiles/smiles_08_02.png"></td>
                     <td><img src="smiles/smiles_08_03.png"></td>
@@ -247,6 +367,22 @@
                 </tr>
 
                 <tr>
+                    <td>UTF8</td>
+                    <td>0xF0 0x9F 0x91 0xAF</td>
+                    <td>0xF0 0x9F 0x99 0x86</td>
+                    <td>0xF0 0x9F 0x99 0x85</td>
+                    <td>0xF0 0x9F 0x92 0x81</td>
+                    <td>0xF0 0x9F 0x99 0x87</td>
+                    <td>0xF0 0x9F 0x92 0x8F</td>
+                    <td>0xF0 0x9F 0x92 0x91</td>
+                    <td>0xF0 0x9F 0x92 0x86</td>
+                    <td>0xF0 0x9F 0x92 0x87</td>
+                    <td>0xF0 0x9F 0x92 0x85</td>
+                    <td>0xF0 0x9F 0x91 0xA6</td> 
+                </tr>
+
+                <tr>
+                    <td>UTF16</td>
                     <td>0xD83D 0xDC6F</td>
                     <td>0xD83D 0xDE46</td>
                     <td>0xD83D 0xDE45</td>
@@ -261,6 +397,7 @@
                 </tr>
 
                 <tr>
+                    <td></td>
                     <td><img src="smiles/smiles_09_01.png"></td>
                     <td><img src="smiles/smiles_09_02.png"></td>
                     <td><img src="smiles/smiles_09_03.png"></td>
@@ -275,6 +412,22 @@
                 </tr>
 
                 <tr>
+                    <td>UTF8</td>
+                    <td>0xF0 0x9F 0x91 0xA7</td>
+                    <td>0xF0 0x9F 0x91 0xA9</td>
+                    <td>0xF0 0x9F 0x91 0xA8</td>
+                    <td>0xF0 0x9F 0x91 0xB6</td>
+                    <td>0xF0 0x9F 0x91 0xB5</td>
+                    <td>0xF0 0x9F 0x91 0xB4</td>
+                    <td>0xF0 0x9F 0x91 0xB1</td>
+                    <td>0xF0 0x9F 0x91 0xB2</td>
+                    <td>0xF0 0x9F 0x91 0xB3</td>
+                    <td>0xF0 0x9F 0x91 0xB7</td>
+                    <td>0xF0 0x9F 0x91 0xAE</td> 
+                </tr>
+
+                <tr>
+                    <td>UTF16</td>
                     <td>0xD83D 0xDC67</td>
                     <td>0xD83D 0xDC69</td>
                     <td>0xD83D 0xDC68</td>
@@ -289,6 +442,7 @@
                 </tr>
 
                 <tr>
+                    <td></td>
                     <td><img src="smiles/smiles_10_01.png"></td>
                     <td><img src="smiles/smiles_10_02.png"></td>
                     <td><img src="smiles/smiles_10_03.png"></td>
@@ -303,6 +457,22 @@
                 </tr>
 
                 <tr>
+                    <td>UTF8</td>
+                    <td>0xF0 0x9F 0x91 0xBC</td>
+                    <td>0xF0 0x9F 0x91 0xB8</td>
+                    <td>0xF0 0x9F 0x92 0x82</td>
+                    <td>0xF0 0x9F 0x92 0x80</td>
+                    <td>0xF0 0x9F 0x91 0xA3</td>
+                    <td>0xF0 0x9F 0x92 0x8B</td>
+                    <td>0xF0 0x9F 0x91 0x84</td>
+                    <td>0xF0 0x9F 0x91 0x82</td>
+                    <td>0xF0 0x9F 0x91 0x80</td>
+                    <td>0xF0 0x9F 0x91 0x83</td>
+                    <td></td> 
+                </tr>
+
+                <tr>
+                    <td>UTF16</td>
                     <td>0xD83D 0xDC7C</td>
                     <td>0xD83D 0xDC78</td>
                     <td>0xD83D 0xDC82</td>
