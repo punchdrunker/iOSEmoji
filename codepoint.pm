@@ -35,7 +35,7 @@ sub surrogate_pair_to_unicode {
     my $hi = shift;
     my $lo = shift;
     my $uni = 0x10000 + (hex($hi) - 0xD800) * 0x400 + (hex($lo) - 0xDC00);
-    return sprintf('U+%x', $uni);
+    return sprintf('U+%X', $uni);
 }
 
 1;
