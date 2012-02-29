@@ -1,5 +1,10 @@
+#!/opt/local/bin/perl
 use strict;
 use warnings;
+
+use Encode;
+use Encode::JP::Emoji;
+
 use codepoint;
 
 my @smiley = (
@@ -564,19 +569,71 @@ my @number = (
     '0x2122',
 );
 
-for my $emoji (@vehicle) {
-    my @array = split(/\s/, $emoji);
-    if ($#array==1) {
-        print Codepoint::surrogate_pair_to_unicode(@array);
+
+
+
+print_sb_unicode(@smiley);
+
+sub print_sb_unicode {
+    my @emojis = @_;
+    my $unicode_string = "";
+    print "<tr>\n<td>SB Unicode/td>\n";
+    for my $emoji (@emojis) {
+        my @array = split(/\s/, $emoji);
+        if ($#array==1) {
+            my $unicode = Codepoint::surrogate_pair_to_unicode(@array, '%02X');
+            $unicode_string = pack('U*', hex($unicode));
+        }
+        elsif ($#array==3) {
+            my $region1 = Codepoint::surrogate_pair_to_unicode($array[0], $array[1], '%02X');
+            $region1 = pack('U*', hex($region1));
+            my $region2 =  Codepoint::surrogate_pair_to_unicode($array[2], $array[3], '%02X');
+            $region2 = pack('U*', hex($region2));
+            $unicode_string = $region1 . $region2;
+        }
+        elsif ($emoji ne '') {
+            $emoji =~ s/0x//;
+            $unicode_string = pack('U*', hex($emoji));
+        }
+        else {
+            print "</tr>\n\n";
+            print "<tr>\n<td>SB Unicode/td>\n";
+        }
+        my $sb_unicode = Codepoint::unicode_to_sb_unicode($unicode_string);
+        print "<td>$sb_unicode</td>\n";
     }
-    elsif ($#array==3) {
-        print Codepoint::surrogate_pair_to_unicode($array[0], $array[1]);
-        print ' ';
-        print Codepoint::surrogate_pair_to_unicode($array[2], $array[3]);
-    }
-    else {
-        $emoji =~ s/0x/U+/;
-        print $emoji;
-    }
-    print "\n";
 }
+
+sub print_unicode {
+    my @emojis = @_;
+    for my $emoji (@emojis) {
+        my @array = split(/\s/, $emoji);
+        if ($#array==1) {
+            print Codepoint::surrogate_pair_to_unicode(@array);
+        }
+        elsif ($#array==3) {
+            print Codepoint::surrogate_pair_to_unicode($array[0], $array[1]);
+            print ' ';
+            print Codepoint::surrogate_pair_to_unicode($array[2], $array[3]);
+        }
+        else {
+            $emoji =~ s/0x/U+/;
+            print $emoji;
+        }
+        print "\n";
+    }
+}
+
+#$utf8 = "\xF0\x9F\x95\x9A";
+#Encode::from_to($utf8, 'x-utf8-e4u-unicode', 'x-utf8-e4u-softbank3g');
+#my $sb_unicode = Codepoint::utf8_to_unicode($utf8, '%02X');
+#print $sb_unicode;
+#print "\n";
+#exit;
+
+
+#my $_unicode = Codepoint::surrogate_pair_to_unicode('0xD83D', '0xDD5A', '%02X');
+#my $_unicode_string = pack('U*', hex($_unicode));
+#print Codepoint::unicode_to_sb_unicode($_unicode_string);
+#print "\n";
+#exit;
