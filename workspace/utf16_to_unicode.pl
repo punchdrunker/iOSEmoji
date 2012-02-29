@@ -572,7 +572,7 @@ my @number = (
 
 
 
-print_sb_unicode(@smiley);
+print_sb_unicode(@number);
 
 sub print_sb_unicode {
     my @emojis = @_;
@@ -581,8 +581,14 @@ sub print_sb_unicode {
     for my $emoji (@emojis) {
         my @array = split(/\s/, $emoji);
         if ($#array==1) {
-            my $unicode = Codepoint::surrogate_pair_to_unicode(@array, '%02X');
-            $unicode_string = pack('U*', hex($unicode));
+            if (hex($array[0]) <= 57) {
+                $unicode_string = pack('U*', hex($array[0]));
+                $unicode_string .= pack('U*', hex($array[1]));
+            }
+            else {
+                my $unicode = Codepoint::surrogate_pair_to_unicode(@array, '%02X');
+                $unicode_string = pack('U*', hex($unicode));
+            }
         }
         elsif ($#array==3) {
             my $region1 = Codepoint::surrogate_pair_to_unicode($array[0], $array[1], '%02X');
