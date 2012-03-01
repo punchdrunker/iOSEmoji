@@ -1,5 +1,5 @@
 <tr>
-<td>SB Unicode/td>
+<td>SB Unicode</td>
 <td>E21C</td>
 <td>E21D</td>
 <td>E21E</td>

@@ -572,12 +572,12 @@ my @number = (
 
 
 
-print_sb_unicode(@number);
+print_sb_unicode(@smiley);
 
 sub print_sb_unicode {
     my @emojis = @_;
     my $unicode_string = "";
-    print "<tr>\n<td>SB Unicode/td>\n";
+    print "<tr>\n<td>SB Unicode</td>\n";
     for my $emoji (@emojis) {
         my @array = split(/\s/, $emoji);
         if ($#array==1) {
