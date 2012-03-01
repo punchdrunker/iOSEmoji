@@ -569,11 +569,6 @@ my @number = (
     '0x2122',
 );
 
-
-
-
-print_sb_unicode(@smiley);
-
 sub print_sb_unicode {
     my @emojis = @_;
     my $unicode_string = "";
@@ -603,7 +598,7 @@ sub print_sb_unicode {
         }
         if ($emoji eq '') {
             print "</tr>\n\n";
-            print "<tr>\n<td>SB Unicode/td>\n";
+            print "<tr>\n<td>SB Unicode</td>\n";
         }
         else {
             my $sb_unicode = Codepoint::unicode_to_sb_unicode($unicode_string);
@@ -632,16 +627,4 @@ sub print_unicode {
     }
 }
 
-#$utf8 = "\xF0\x9F\x95\x9A";
-#Encode::from_to($utf8, 'x-utf8-e4u-unicode', 'x-utf8-e4u-softbank3g');
-#my $sb_unicode = Codepoint::utf8_to_unicode($utf8, '%02X');
-#print $sb_unicode;
-#print "\n";
-#exit;
-
-
-#my $_unicode = Codepoint::surrogate_pair_to_unicode('0xD83D', '0xDD5A', '%02X');
-#my $_unicode_string = pack('U*', hex($_unicode));
-#print Codepoint::unicode_to_sb_unicode($_unicode_string);
-#print "\n";
-#exit;
+print_sb_unicode(@vehicle);

@@ -14,7 +14,7 @@
 </tr>
 
 <tr>
-<td>SB Unicode/td>
+<td>SB Unicode</td>
 <td>E504</td>
 <td>E44A</td>
 <td>E146</td>
@@ -29,7 +29,7 @@
 </tr>
 
 <tr>
-<td>SB Unicode/td>
+<td>SB Unicode</td>
 <td>E449</td>
 <td>E44B</td>
 <td>E51D</td>
@@ -44,7 +44,7 @@
 </tr>
 
 <tr>
-<td>SB Unicode/td>
+<td>SB Unicode</td>
 <td>E10D</td>
 <td>E136</td>
 <td>E42E</td>
@@ -59,7 +59,7 @@
 </tr>
 
 <tr>
-<td>SB Unicode/td>
+<td>SB Unicode</td>
 <td>E039</td>
 <td>E435</td>
 <td>E01F</td>
@@ -74,7 +74,7 @@
 </tr>
 
 <tr>
-<td>SB Unicode/td>
+<td>SB Unicode</td>
 <td>E320</td>
 <td>E123</td>
 <td>E132</td>
@@ -89,7 +89,7 @@
 </tr>
 
 <tr>
-<td>SB Unicode/td>
+<td>SB Unicode</td>
 <td>E512</td>
 <td>E510</td>
 <td>E50E</td>
