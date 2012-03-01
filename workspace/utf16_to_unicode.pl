@@ -601,12 +601,14 @@ sub print_sb_unicode {
             $emoji =~ s/0x//;
             $unicode_string = pack('U*', hex($emoji));
         }
-        else {
+        if ($emoji eq '') {
             print "</tr>\n\n";
             print "<tr>\n<td>SB Unicode/td>\n";
         }
-        my $sb_unicode = Codepoint::unicode_to_sb_unicode($unicode_string);
-        print "<td>$sb_unicode</td>\n";
+        else {
+            my $sb_unicode = Codepoint::unicode_to_sb_unicode($unicode_string);
+            print "<td>$sb_unicode</td>\n";
+        }
     }
 }
 

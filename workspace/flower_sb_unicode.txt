@@ -15,7 +15,6 @@
 
 <tr>
 <td>SB Unicode/td>
-<td>E053</td>
 <td>E524</td>
 <td>E52C</td>
 <td>E52A</td>
@@ -31,7 +30,6 @@
 
 <tr>
 <td>SB Unicode/td>
-<td>E109</td>
 <td>E528</td>
 <td>E01A</td>
 <td>E134</td>
@@ -47,7 +45,6 @@
 
 <tr>
 <td>SB Unicode/td>
-<td>E055</td>
 <td>E525</td>
 <td>E10A</td>
 <td>E522</td>
@@ -63,7 +60,6 @@
 
 <tr>
 <td>SB Unicode/td>
-<td>E032</td>
 <td>E305</td>
 <td>E303</td>
 <td>E118</td>
