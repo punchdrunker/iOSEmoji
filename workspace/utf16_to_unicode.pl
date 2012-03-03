@@ -582,15 +582,18 @@ sub publish_sb_unicode {
     for my $emoji (@emojis) {
         my @array = split(/\s/, $emoji);
         if ($#array==1) {
+            # ただの結合文字
             if (hex($array[0]) <= 57) {
                 $unicode_string = pack('U*', hex($array[0]));
                 $unicode_string .= pack('U*', hex($array[1]));
             }
+            # サロゲートペア
             else {
                 my $unicode = Codepoint::surrogate_pair_to_unicode(@array, '%02X');
                 $unicode_string = pack('U*', hex($unicode));
             }
         }
+        # サロゲートペアで結合文字
         elsif ($#array==3) {
             my $region1 = Codepoint::surrogate_pair_to_unicode($array[0], $array[1], '%02X');
             $region1 = pack('U*', hex($region1));
@@ -627,16 +630,18 @@ sub publish_unicode {
     for my $emoji (@emojis) {
         my @array = split(/\s/, $emoji);
         if ($#array==1) {
-            if ($array[0] eq '0xD83C' || $array[0] eq '0xD83D') {
-                print $fh Codepoint::surrogate_pair_to_unicode(@array);
-            }
             # ただの結合文字
-            else {
+            if (hex($array[0]) <= 57) {
                 $array[0] =~ s/0x/U+/;
                 $array[1] =~ s/0x/U+/;
                 print $fh "$array[0] $array[1]";
             }
+            # サロゲートペア
+            else {
+                print $fh Codepoint::surrogate_pair_to_unicode(@array);
+            }
         }
+        # サロゲートペアで結合文字
         elsif ($#array==3) {
             print $fh Codepoint::surrogate_pair_to_unicode($array[0], $array[1]);
             print $fh ' ';
