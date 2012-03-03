@@ -1,7 +1,6 @@
 #!/opt/local/bin/perl
 use strict;
 use warnings;
-
 use Encode;
 use Encode::JP::Emoji;
 
@@ -569,10 +568,17 @@ my @number = (
     '0x2122',
 );
 
-sub print_sb_unicode {
+# usage:
+# publish_sb_unicode("file_name", @utf16_codes)
+sub publish_sb_unicode {
+    my $file = shift;
     my @emojis = @_;
     my $unicode_string = "";
-    print "<tr>\n<td>SB Unicode</td>\n";
+
+    open my $fh, '>', $file
+        or die qq/Can't open file "$file" :$!/;
+
+    print $fh "<tr>\n<td>SB Unicode</td>\n";
     for my $emoji (@emojis) {
         my @array = split(/\s/, $emoji);
         if ($#array==1) {
@@ -597,34 +603,63 @@ sub print_sb_unicode {
             $unicode_string = pack('U*', hex($emoji));
         }
         if ($emoji eq '') {
-            print "</tr>\n\n";
-            print "<tr>\n<td>SB Unicode</td>\n";
+            print $fh "</tr>\n\n";
+            print $fh "<tr>\n<td>SB Unicode</td>\n";
         }
         else {
             my $sb_unicode = Codepoint::unicode_to_sb_unicode($unicode_string);
-            print "<td>$sb_unicode</td>\n";
+            print $fh "<td>$sb_unicode</td>\n";
         }
     }
+
+    close $fh or die qw/Can't close file "$file": $!/;
 }
 
-sub print_unicode {
+# usage:
+# publish_unicode("file_name", @utf16_codes)
+sub publish_unicode {
+    my $file = shift;
     my @emojis = @_;
+
+    open my $fh, '>', $file
+        or die qq/Can't open file "$file" :$!/;
+
     for my $emoji (@emojis) {
         my @array = split(/\s/, $emoji);
         if ($#array==1) {
-            print Codepoint::surrogate_pair_to_unicode(@array);
+            if ($array[0] eq '0xD83C' || $array[0] eq '0xD83D') {
+                print $fh Codepoint::surrogate_pair_to_unicode(@array);
+            }
+            # ただの結合文字
+            else {
+                $array[0] =~ s/0x/U+/;
+                $array[1] =~ s/0x/U+/;
+                print $fh "$array[0] $array[1]";
+            }
         }
         elsif ($#array==3) {
-            print Codepoint::surrogate_pair_to_unicode($array[0], $array[1]);
-            print ' ';
-            print Codepoint::surrogate_pair_to_unicode($array[2], $array[3]);
+            print $fh Codepoint::surrogate_pair_to_unicode($array[0], $array[1]);
+            print $fh ' ';
+            print $fh Codepoint::surrogate_pair_to_unicode($array[2], $array[3]);
         }
         else {
             $emoji =~ s/0x/U+/;
-            print $emoji;
+            print $fh $emoji;
         }
-        print "\n";
+        print $fh "\n";
     }
+
+    close $fh or die qw/Can't close file "$file": $!/;
 }
 
-print_sb_unicode(@vehicle);
+publish_unicode("smiley_unicode.txt", @smiley);
+publish_unicode("flower_unicode.txt", @flower);
+publish_unicode("bell_unicode.txt", @bell);
+publish_unicode("vehicle_unicode.txt", @vehicle);
+publish_unicode("number_unicode.txt", @number);
+
+publish_sb_unicode("smiley_sb_unicode.txt", @smiley);
+publish_sb_unicode("flower_sb_unicode.txt", @flower);
+publish_sb_unicode("bell_sb_unicode.txt", @bell);
+publish_sb_unicode("vehicle_sb_unicode.txt", @vehicle);
+publish_sb_unicode("number_sb_unicode.txt", @number);
