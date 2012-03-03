@@ -652,14 +652,14 @@ sub publish_unicode {
     close $fh or die qw/Can't close file "$file": $!/;
 }
 
-publish_unicode("smiley_unicode.txt", @smiley);
-publish_unicode("flower_unicode.txt", @flower);
-publish_unicode("bell_unicode.txt", @bell);
-publish_unicode("vehicle_unicode.txt", @vehicle);
-publish_unicode("number_unicode.txt", @number);
+publish_unicode("list/smiley_unicode.txt", @smiley);
+publish_unicode("list/flower_unicode.txt", @flower);
+publish_unicode("list/bell_unicode.txt", @bell);
+publish_unicode("list/vehicle_unicode.txt", @vehicle);
+publish_unicode("list/number_unicode.txt", @number);
 
-publish_sb_unicode("smiley_sb_unicode.txt", @smiley);
-publish_sb_unicode("flower_sb_unicode.txt", @flower);
-publish_sb_unicode("bell_sb_unicode.txt", @bell);
-publish_sb_unicode("vehicle_sb_unicode.txt", @vehicle);
-publish_sb_unicode("number_sb_unicode.txt", @number);
+publish_sb_unicode("list/smiley_sb_unicode.txt", @smiley);
+publish_sb_unicode("list/flower_sb_unicode.txt", @flower);
+publish_sb_unicode("list/bell_sb_unicode.txt", @bell);
+publish_sb_unicode("list/vehicle_sb_unicode.txt", @vehicle);
+publish_sb_unicode("list/number_sb_unicode.txt", @number);
