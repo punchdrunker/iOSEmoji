@@ -1,6 +1,7 @@
 #!/opt/local/bin/perl
 use strict;
 use warnings;
+use Data::Dumper;
 use Encode;
 use Encode::JP::Emoji;
 
@@ -572,14 +573,15 @@ my @number = (
 # publish_sb_unicode("file_name", @utf16_codes)
 sub publish_sb_unicode {
     my $file = shift;
-    my @emojis = @_;
+    my $emojis = shift;
     my $unicode_string = "";
 
     open my $fh, '>', $file
         or die qq/Can't open file "$file" :$!/;
 
     print $fh "<tr>\n<td>SB Unicode</td>\n";
-    for my $emoji (@emojis) {
+    for my $emoji (@{$emojis}) {
+
         my @array = split(/\s/, $emoji);
         if ($#array==1) {
             # ただの結合文字
@@ -622,12 +624,12 @@ sub publish_sb_unicode {
 # publish_unicode("file_name", @utf16_codes)
 sub publish_unicode {
     my $file = shift;
-    my @emojis = @_;
+    my $emojis = shift;
 
     open my $fh, '>', $file
         or die qq/Can't open file "$file" :$!/;
 
-    for my $emoji (@emojis) {
+    for my $emoji (@{$emojis}) {
         my @array = split(/\s/, $emoji);
         if ($#array==1) {
             # ただの結合文字
@@ -648,8 +650,9 @@ sub publish_unicode {
             print $fh Codepoint::surrogate_pair_to_unicode($array[2], $array[3]);
         }
         else {
-            $emoji =~ s/0x/U+/;
-            print $fh $emoji;
+            my $unicode = $emoji;
+            $unicode =~ s/0x/U+/;
+            print $fh $unicode;
         }
         print $fh "\n";
     }
@@ -657,14 +660,15 @@ sub publish_unicode {
     close $fh or die qw/Can't close file "$file": $!/;
 }
 
-publish_unicode("list/smiley_unicode.txt", @smiley);
-publish_unicode("list/flower_unicode.txt", @flower);
-publish_unicode("list/bell_unicode.txt", @bell);
-publish_unicode("list/vehicle_unicode.txt", @vehicle);
-publish_unicode("list/number_unicode.txt", @number);
+my $all_emoji = {
+    "smiley" => \@smiley,
+    'flower' => \@flower,
+    'bell' => \@bell,
+    'vehicle' => \@vehicle,
+    'number' => \@number,
+};
 
-publish_sb_unicode("list/smiley_sb_unicode.txt", @smiley);
-publish_sb_unicode("list/flower_sb_unicode.txt", @flower);
-publish_sb_unicode("list/bell_sb_unicode.txt", @bell);
-publish_sb_unicode("list/vehicle_sb_unicode.txt", @vehicle);
-publish_sb_unicode("list/number_sb_unicode.txt", @number);
+for my $category (keys(%{$all_emoji})) {
+    publish_unicode("list/" . $category . "_unicode.txt", $all_emoji->{$category});
+    publish_sb_unicode("list/" . $category . "_sb_unicode.txt", $all_emoji->{$category});
+}
