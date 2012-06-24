@@ -18,33 +18,6 @@ sub String2Bytes {
 
     return($str);
 }
-my $strings = Encode::decode('utf8', $emojis);
-my @chars = split(//, $strings);
-my $id = 1;
-foreach my $c (@chars){
-    my $codepoint = String2Bytes($c);
-    my $dec = hex($codepoint);
-    #print "wget http://www.charbase.com/images/glyph/".$dec;
-
-    my $name = Encode::encode('x-utf8-e4u-none', $c, FB_EMOJI_TEXT());
-    my $utf8 = Encode::encode('utf8', $c);
-    my $utf16 = Encode::encode('utf16BE', $c);
-    $c = Encode::encode('x-utf8-e4u-unicode', $c);
-    my $google_emoji = Encode::decode('x-utf8-e4u-unicode', $c);
-    my $docomo = Encode::encode('x-utf8-e4u-docomo', $google_emoji) || '';
-    my $sb = Encode::encode('x-utf8-e4u-softbank3g', $google_emoji) || '';
-    my $kddi = Encode::encode('x-utf8-e4u-kddiweb', $google_emoji) || '';
-    $docomo = '' if ($utf8 eq $docomo);
-    $sb = '' if ($utf8 eq $sb);
-    $kddi = '' if ($utf8 eq $kddi);
-
-
-    print_tr($id, $dec, $name, $codepoint, $utf8, $utf16, $docomo, $sb, $kddi);
-    #print_json($name, $codepoint, $utf8, $utf16, $docomo, $sb, $kddi);
-    print "\n";
-
-    $id += 1;
-}
 
 sub print_tr {
     my $id = shift;
@@ -89,3 +62,87 @@ sub print_json {
     print '"kddi-utf8":"'.String2Bytes($kddi).'",';
     print '},';
 }
+
+sub print_table_header {
+    my $title = shift;
+    print << "EOF";
+            <section id="$title">
+            <h3>$title</h3>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>No.</th>
+                        <th>image</th>
+                        <th>name</th>
+                        <th>Unicode</th>
+                        <th>UTF-8</th>
+                        <th>UTF-16</th>
+                        <th>docomo UTF-8</th>
+                        <th>softbank UTF-8</th>
+                        <th>kddi UTF-8</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+EOF
+}
+
+sub print_table_footer {
+    print << "EOF";
+                </tbody>
+            </table>
+            </section>
+EOF
+}
+
+
+
+
+
+my $strings = Encode::decode('utf8', $emojis);
+my @chars = split(//, $strings);
+my $id = 1;
+
+print_table_header('smiley');
+foreach my $c (@chars){
+    my $codepoint = String2Bytes($c);
+    my $dec = hex($codepoint);
+    #print "wget http://www.charbase.com/images/glyph/".$dec;
+
+    my $name = Encode::encode('x-utf8-e4u-none', $c, FB_EMOJI_TEXT());
+    my $utf8 = Encode::encode('utf8', $c);
+    my $utf16 = Encode::encode('utf16BE', $c);
+    $c = Encode::encode('x-utf8-e4u-unicode', $c);
+    my $google_emoji = Encode::decode('x-utf8-e4u-unicode', $c);
+    my $docomo = Encode::encode('x-utf8-e4u-docomo', $google_emoji) || '';
+    my $sb = Encode::encode('x-utf8-e4u-softbank3g', $google_emoji) || '';
+    my $kddi = Encode::encode('x-utf8-e4u-kddiweb', $google_emoji) || '';
+    $docomo = '' if ($utf8 eq $docomo);
+    $sb = '' if ($utf8 eq $sb);
+    $kddi = '' if ($utf8 eq $kddi);
+
+    if ($codepoint eq '1F436') {
+        print_table_footer();
+        print_table_header('flower');
+    }
+    if ($codepoint eq '1F38D') {
+        print_table_footer();
+        print_table_header('bell');
+    }
+    if ($codepoint eq '1F3E0') {
+        print_table_footer();
+        print_table_header('vehicle');
+    }
+    if ($codepoint eq '31') {
+        print_table_footer();
+        print_table_header('number');
+    }
+
+    print_tr($id, $dec, $name, $codepoint, $utf8, $utf16, $docomo, $sb, $kddi);
+    #print_json($name, $codepoint, $utf8, $utf16, $docomo, $sb, $kddi);
+    print "\n";
+
+    $id += 1;
+}
+
+print_table_footer();

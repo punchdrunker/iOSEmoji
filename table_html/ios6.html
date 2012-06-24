@@ -28,12 +28,19 @@
 
         <div class="container">
             <h3>About</h3>
-            <p>iOS5から利用できるunicode6な絵文字のキャプチャ画像とUnicodeコードポイント,UTF8,UTF16での文字コードの対応表です。</p>
-            <p>iPadの絵文字キーボードと同じ順番に並んでいます。</p>
-            <p><a href="emoji.json"><i class="icon-file"></i>JSON配列(ソート済み/UTF16)はこちら</a></p>
+            <p>iOS6から利用できるunicode6な絵文字のキャプチャ画像とUnicodeコードポイント,UTF8,UTF16での文字コードの対応表です。</p>
+            <p>文字の並びはiPhone/iPadの並びと揃えています。</p>
+            <p><a href="emoji_ios6.json"><i class="icon-file"></i>JSON配列(ソート済み/UTF16)はこちら</a></p>
+
+            <h3>TODO(不具合)</h3>
+            <ul>
+            <li>一部の文字は黒い四角のような画像になっていますが、iOS6のフォントにしかないグリフのため、まだ準備中です。</li>
+            <li>一部の文字は名前はまだ無い、ですが後日入れます。</li>
+            <li>国旗と囲い文字がまだおかしな事になってますが、数日中に直します。。。(値としては合っているけど、合字と結合文字の扱いをうまく捌けてない)</li>
+            </ul>
 
             <section id="smiley">
-            <h3>Smiley</h3>
+            <h3>smiley</h3>
             <table class="table table-bordered">
                 <thead>
                     <tr>
@@ -50,7 +57,6 @@
                 </thead>
 
                 <tbody>
-
 <tr><td>1</td><td><img src="img/128516.png" /></td><td>[表情（嬉しい）]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F604/index.htm" target="_blank">1F604</a></td><td>F09F9884</td><td>D83DDE04</td><td>EE9BB0</td><td>EE9095</td><td>EEBD89</td></tr>
 <tr><td>2</td><td><img src="img/128515.png" /></td><td>[わーい（嬉しい顔）]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F603/index.htm" target="_blank">1F603</a></td><td>F09F9883</td><td>D83DDE03</td><td>EE9BB0</td><td>EE8197</td><td>EEBD89</td></tr>
 <tr><td>3</td><td><img src="img/128512.png" /></td><td>😀</td><td><a href="http://www.fileformat.info/info/unicode/char/1F600/index.htm" target="_blank">1F600</a></td><td>F09F9880</td><td>D83DDE00</td><td></td><td></td><td></td></tr>
@@ -240,6 +246,27 @@
 <tr><td>187</td><td><img src="img/128172.png" /></td><td>[フキダシ]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F4AC/index.htm" target="_blank">1F4AC</a></td><td>F09F92AC</td><td>D83DDCAC</td><td></td><td></td><td>EEBF96</td></tr>
 <tr><td>188</td><td><img src="img/128099.png" /></td><td>[足]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F463/index.htm" target="_blank">1F463</a></td><td>F09F91A3</td><td>D83DDC63</td><td>EE9A98</td><td>EE94B6</td><td>EEB3AB</td></tr>
 <tr><td>189</td><td><img src="img/128173.png" /></td><td>💭</td><td><a href="http://www.fileformat.info/info/unicode/char/1F4AD/index.htm" target="_blank">1F4AD</a></td><td>F09F92AD</td><td>D83DDCAD</td><td></td><td></td><td></td></tr>
+                </tbody>
+            </table>
+            </section>
+            <section id="flower">
+            <h3>flower</h3>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>No.</th>
+                        <th>image</th>
+                        <th>name</th>
+                        <th>Unicode</th>
+                        <th>UTF-8</th>
+                        <th>UTF-16</th>
+                        <th>docomo UTF-8</th>
+                        <th>softbank UTF-8</th>
+                        <th>kddi UTF-8</th>
+                    </tr>
+                </thead>
+
+                <tbody>
 <tr><td>190</td><td><img src="img/128054.png" /></td><td>[犬]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F436/index.htm" target="_blank">1F436</a></td><td>F09F90B6</td><td>D83DDC36</td><td>EE9AA1</td><td>EE8192</td><td>EEBEBA</td></tr>
 <tr><td>191</td><td><img src="img/128058.png" /></td><td>[おおかみ]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F43A/index.htm" target="_blank">1F43A</a></td><td>F09F90BA</td><td>D83DDC3A</td><td>EE9AA1</td><td>EE94AA</td><td>EEBEBA</td></tr>
 <tr><td>192</td><td><img src="img/128049.png" /></td><td>[猫]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F431/index.htm" target="_blank">1F431</a></td><td>F09F90B1</td><td>D83DDC31</td><td>EE9AA2</td><td>EE818F</td><td>EEBEB4</td></tr>
@@ -356,6 +383,27 @@
 <tr><td>303</td><td><img src="img/127745.png" /></td><td>[霧]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F301/index.htm" target="_blank">1F301</a></td><td>F09F8C81</td><td>D83CDF01</td><td>EE9984</td><td></td><td>EF82B5</td></tr>
 <tr><td>304</td><td><img src="img/127752.png" /></td><td>[虹]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F308/index.htm" target="_blank">1F308</a></td><td>F09F8C88</td><td>D83CDF08</td><td></td><td>EE918C</td><td>EEB386</td></tr>
 <tr><td>305</td><td><img src="img/127754.png" /></td><td>[波]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F30A/index.htm" target="_blank">1F30A</a></td><td>F09F8C8A</td><td>D83CDF0A</td><td>EE9CBF</td><td>EE90BE</td><td>EEB681</td></tr>
+                </tbody>
+            </table>
+            </section>
+            <section id="bell">
+            <h3>bell</h3>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>No.</th>
+                        <th>image</th>
+                        <th>name</th>
+                        <th>Unicode</th>
+                        <th>UTF-8</th>
+                        <th>UTF-16</th>
+                        <th>docomo UTF-8</th>
+                        <th>softbank UTF-8</th>
+                        <th>kddi UTF-8</th>
+                    </tr>
+                </thead>
+
+                <tbody>
 <tr><td>306</td><td><img src="img/127885.png" /></td><td>[門松]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F38D/index.htm" target="_blank">1F38D</a></td><td>F09F8E8D</td><td>D83CDF8D</td><td></td><td>EE90B6</td><td>EEB2B7</td></tr>
 <tr><td>307</td><td><img src="img/128157.png" /></td><td>[リボンがけのハート]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F49D/index.htm" target="_blank">1F49D</a></td><td>F09F929D</td><td>D83DDC9D</td><td>EE9BAC</td><td>EE90B7</td><td>EEB598</td></tr>
 <tr><td>308</td><td><img src="img/127886.png" /></td><td>[ひな祭り]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F38E/index.htm" target="_blank">1F38E</a></td><td>F09F8E8E</td><td>D83CDF8E</td><td></td><td>EE90B8</td><td>EEB2B8</td></tr>
@@ -586,6 +634,27 @@
 <tr><td>533</td><td><img src="img/127814.png" /></td><td>[ナス]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F346/index.htm" target="_blank">1F346</a></td><td>F09F8D86</td><td>D83CDF46</td><td></td><td>EE8D8A</td><td>EEB290</td></tr>
 <tr><td>534</td><td><img src="img/127813.png" /></td><td>[トマト]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F345/index.htm" target="_blank">1F345</a></td><td>F09F8D85</td><td>D83CDF45</td><td></td><td>EE8D89</td><td>EEB28F</td></tr>
 <tr><td>535</td><td><img src="img/127805.png" /></td><td>[とうもろこし]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F33D/index.htm" target="_blank">1F33D</a></td><td>F09F8CBD</td><td>D83CDF3D</td><td></td><td></td><td>EEB3B7</td></tr>
+                </tbody>
+            </table>
+            </section>
+            <section id="vehicle">
+            <h3>vehicle</h3>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>No.</th>
+                        <th>image</th>
+                        <th>name</th>
+                        <th>Unicode</th>
+                        <th>UTF-8</th>
+                        <th>UTF-16</th>
+                        <th>docomo UTF-8</th>
+                        <th>softbank UTF-8</th>
+                        <th>kddi UTF-8</th>
+                    </tr>
+                </thead>
+
+                <tbody>
 <tr><td>536</td><td><img src="img/127968.png" /></td><td>[家]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F3E0/index.htm" target="_blank">1F3E0</a></td><td>F09F8FA0</td><td>D83CDFE0</td><td>EE99A3</td><td>EE80B6</td><td>EEBE84</td></tr>
 <tr><td>537</td><td><img src="img/127969.png" /></td><td>[ホーム]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F3E1/index.htm" target="_blank">1F3E1</a></td><td>F09F8FA1</td><td>D83CDFE1</td><td>EE99A3</td><td>EE80B6</td><td>EF83A0</td></tr>
 <tr><td>538</td><td><img src="img/127979.png" /></td><td>[学校]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F3EB/index.htm" target="_blank">1F3EB</a></td><td>F09F8FAB</td><td>D83CDFEB</td><td>EE9CBE</td><td>EE8597</td><td>EEB193</td></tr>
@@ -697,6 +766,27 @@
 <tr><td>644</td><td><img src="img/127482.png" /></td><td>🇺</td><td><a href="http://www.fileformat.info/info/unicode/char/1F1FA/index.htm" target="_blank">1F1FA</a></td><td>F09F87BA</td><td>D83CDDFA</td><td></td><td></td><td></td></tr>
 <tr><td>645</td><td><img src="img/127468.png" /></td><td>🇬</td><td><a href="http://www.fileformat.info/info/unicode/char/1F1EC/index.htm" target="_blank">1F1EC</a></td><td>F09F87AC</td><td>D83CDDEC</td><td></td><td></td><td></td></tr>
 <tr><td>646</td><td><img src="img/127463.png" /></td><td>🇧</td><td><a href="http://www.fileformat.info/info/unicode/char/1F1E7/index.htm" target="_blank">1F1E7</a></td><td>F09F87A7</td><td>D83CDDE7</td><td></td><td></td><td></td></tr>
+                </tbody>
+            </table>
+            </section>
+            <section id="number">
+            <h3>number</h3>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>No.</th>
+                        <th>image</th>
+                        <th>name</th>
+                        <th>Unicode</th>
+                        <th>UTF-8</th>
+                        <th>UTF-16</th>
+                        <th>docomo UTF-8</th>
+                        <th>softbank UTF-8</th>
+                        <th>kddi UTF-8</th>
+                    </tr>
+                </thead>
+
+                <tbody>
 <tr><td>647</td><td><img src="img/49.png" /></td><td>1</td><td><a href="http://www.fileformat.info/info/unicode/char/31/index.htm" target="_blank">31</a></td><td>31</td><td>0031</td><td></td><td></td><td></td></tr>
 <tr><td>648</td><td><img src="img/8419.png" /></td><td>⃣</td><td><a href="http://www.fileformat.info/info/unicode/char/20E3/index.htm" target="_blank">20E3</a></td><td>E283A3</td><td>20E3</td><td></td><td></td><td></td></tr>
 <tr><td>649</td><td><img src="img/50.png" /></td><td>2</td><td><a href="http://www.fileformat.info/info/unicode/char/32/index.htm" target="_blank">32</a></td><td>32</td><td>0032</td><td></td><td></td><td></td></tr>
@@ -917,7 +1007,6 @@
 <tr><td>864</td><td><img src="img/128311.png" /></td><td>[◆]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F537/index.htm" target="_blank">1F537</a></td><td>F09F94B7</td><td>D83DDD37</td><td></td><td>EE889B</td><td>EF81A3</td></tr>
 <tr><td>865</td><td><img src="img/128312.png" /></td><td>[◆]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F538/index.htm" target="_blank">1F538</a></td><td>F09F94B8</td><td>D83DDD38</td><td></td><td>EE889B</td><td>EF8192</td></tr>
 <tr><td>866</td><td><img src="img/128313.png" /></td><td>[◆]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F539/index.htm" target="_blank">1F539</a></td><td>F09F94B9</td><td>D83DDD39</td><td></td><td>EE889B</td><td>EF8193</td></tr>
-
                 </tbody>
             </table>
             </section>
