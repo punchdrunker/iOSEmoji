@@ -1,0 +1,286 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset=utf8>
+        <meta http-equiv="Content-Script-Type" content="text/javascript">
+        <link href="../bootstrap/css/bootstrap.css" rel="stylesheet">
+        <script type="text/javascript" src="../js/jquery-1.7.1.min.js"></script>
+        <script type="text/javascript" src="../bootstrap/js/bootstrap.js"></script>
+        <script type="text/javascript" src="../js/my.js"></script>
+        <link rel="stylesheet" href="../css/style.css">
+        <title>iOS Emoji</title>
+    </head>
+    <body>
+        <div class="navbar navbar-fixed-top"> 
+            <div class="navbar-inner"> 
+                <div class="container"> 
+                    <a href="index.html" class="brand">iOS Emoji</a>
+                    <ul class="nav"> 
+                        <li><a href="index.html">Smiley</a></li> 
+                        <li><a href="flower.html">Flower</a></li> 
+                        <li><a href="bell.html">Bell</a></li> 
+                        <li><a href="vehicle.html">Vehicle</a></li> 
+                        <li><a href="number.html">Number</a></li> 
+                    </ul> 
+                </div> 
+            </div> 
+        </div> 
+
+        <div class="container">
+            <h3>About</h3>
+            <p>iOS6から利用できるunicode6な絵文字のキャプチャ画像とUnicodeコードポイント,UTF8,UTF16での文字コードの対応表です。</p>
+            <p>文字の並びはiPhone/iPadの並びと揃えています。</p>
+            <p>画像が多いので、GithubPagesでは分割版のhtmlにしています。統合版のhtmlは<a href="https://github.com/punchdrunker/iOSEmoji">masterブランチ</a>に入っているので、必要な方はそちらをご利用ください。</p>
+            <p><a href="emoji_ios6.json"><i class="icon-file"></i>JSON配列(ソート済み/UTF16)はこちら</a></p>
+
+            <h3>TODO(不具合)</h3>
+            <ul>
+            <li>一部の文字は黒い四角のような画像になっていますが、iOS6のフォントにしかないグリフのため、まだ準備中です。</li>
+            <li>一部の文字は名前はまだ無い、ですが後日入れます。</li>
+            <li>国旗と囲い文字がまだおかしな事になってますが、数日中に直します。。。(値としては合っているけど、合字と結合文字の扱いをうまく捌けてない)</li>
+            </ul>
+
+            <section id="number">
+            <h3>number</h3>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>No.</th>
+                        <th>image</th>
+                        <th>name</th>
+                        <th>Unicode</th>
+                        <th>UTF-8</th>
+                        <th>UTF-16</th>
+                        <th>docomo UTF-8</th>
+                        <th>softbank UTF-8</th>
+                        <th>kddi UTF-8</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+<tr><td>647</td><td><img src="img/49.png" /></td><td>1</td><td><a href="http://www.fileformat.info/info/unicode/char/31/index.htm" target="_blank">31</a></td><td>31</td><td>0031</td><td></td><td></td><td></td></tr>
+<tr><td>648</td><td><img src="img/8419.png" /></td><td>⃣</td><td><a href="http://www.fileformat.info/info/unicode/char/20E3/index.htm" target="_blank">20E3</a></td><td>E283A3</td><td>20E3</td><td></td><td></td><td></td></tr>
+<tr><td>649</td><td><img src="img/50.png" /></td><td>2</td><td><a href="http://www.fileformat.info/info/unicode/char/32/index.htm" target="_blank">32</a></td><td>32</td><td>0032</td><td></td><td></td><td></td></tr>
+<tr><td>650</td><td><img src="img/8419.png" /></td><td>⃣</td><td><a href="http://www.fileformat.info/info/unicode/char/20E3/index.htm" target="_blank">20E3</a></td><td>E283A3</td><td>20E3</td><td></td><td></td><td></td></tr>
+<tr><td>651</td><td><img src="img/51.png" /></td><td>3</td><td><a href="http://www.fileformat.info/info/unicode/char/33/index.htm" target="_blank">33</a></td><td>33</td><td>0033</td><td></td><td></td><td></td></tr>
+<tr><td>652</td><td><img src="img/8419.png" /></td><td>⃣</td><td><a href="http://www.fileformat.info/info/unicode/char/20E3/index.htm" target="_blank">20E3</a></td><td>E283A3</td><td>20E3</td><td></td><td></td><td></td></tr>
+<tr><td>653</td><td><img src="img/52.png" /></td><td>4</td><td><a href="http://www.fileformat.info/info/unicode/char/34/index.htm" target="_blank">34</a></td><td>34</td><td>0034</td><td></td><td></td><td></td></tr>
+<tr><td>654</td><td><img src="img/8419.png" /></td><td>⃣</td><td><a href="http://www.fileformat.info/info/unicode/char/20E3/index.htm" target="_blank">20E3</a></td><td>E283A3</td><td>20E3</td><td></td><td></td><td></td></tr>
+<tr><td>655</td><td><img src="img/53.png" /></td><td>5</td><td><a href="http://www.fileformat.info/info/unicode/char/35/index.htm" target="_blank">35</a></td><td>35</td><td>0035</td><td></td><td></td><td></td></tr>
+<tr><td>656</td><td><img src="img/8419.png" /></td><td>⃣</td><td><a href="http://www.fileformat.info/info/unicode/char/20E3/index.htm" target="_blank">20E3</a></td><td>E283A3</td><td>20E3</td><td></td><td></td><td></td></tr>
+<tr><td>657</td><td><img src="img/54.png" /></td><td>6</td><td><a href="http://www.fileformat.info/info/unicode/char/36/index.htm" target="_blank">36</a></td><td>36</td><td>0036</td><td></td><td></td><td></td></tr>
+<tr><td>658</td><td><img src="img/8419.png" /></td><td>⃣</td><td><a href="http://www.fileformat.info/info/unicode/char/20E3/index.htm" target="_blank">20E3</a></td><td>E283A3</td><td>20E3</td><td></td><td></td><td></td></tr>
+<tr><td>659</td><td><img src="img/55.png" /></td><td>7</td><td><a href="http://www.fileformat.info/info/unicode/char/37/index.htm" target="_blank">37</a></td><td>37</td><td>0037</td><td></td><td></td><td></td></tr>
+<tr><td>660</td><td><img src="img/8419.png" /></td><td>⃣</td><td><a href="http://www.fileformat.info/info/unicode/char/20E3/index.htm" target="_blank">20E3</a></td><td>E283A3</td><td>20E3</td><td></td><td></td><td></td></tr>
+<tr><td>661</td><td><img src="img/56.png" /></td><td>8</td><td><a href="http://www.fileformat.info/info/unicode/char/38/index.htm" target="_blank">38</a></td><td>38</td><td>0038</td><td></td><td></td><td></td></tr>
+<tr><td>662</td><td><img src="img/8419.png" /></td><td>⃣</td><td><a href="http://www.fileformat.info/info/unicode/char/20E3/index.htm" target="_blank">20E3</a></td><td>E283A3</td><td>20E3</td><td></td><td></td><td></td></tr>
+<tr><td>663</td><td><img src="img/57.png" /></td><td>9</td><td><a href="http://www.fileformat.info/info/unicode/char/39/index.htm" target="_blank">39</a></td><td>39</td><td>0039</td><td></td><td></td><td></td></tr>
+<tr><td>664</td><td><img src="img/8419.png" /></td><td>⃣</td><td><a href="http://www.fileformat.info/info/unicode/char/20E3/index.htm" target="_blank">20E3</a></td><td>E283A3</td><td>20E3</td><td></td><td></td><td></td></tr>
+<tr><td>665</td><td><img src="img/0.png" /></td><td>0</td><td><a href="http://www.fileformat.info/info/unicode/char//index.htm" target="_blank"></a></td><td></td><td>0030</td><td></td><td></td><td></td></tr>
+<tr><td>666</td><td><img src="img/8419.png" /></td><td>⃣</td><td><a href="http://www.fileformat.info/info/unicode/char/20E3/index.htm" target="_blank">20E3</a></td><td>E283A3</td><td>20E3</td><td></td><td></td><td></td></tr>
+<tr><td>667</td><td><img src="img/128287.png" /></td><td>[10]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F51F/index.htm" target="_blank">1F51F</a></td><td>F09F949F</td><td>D83DDD1F</td><td></td><td></td><td>EF8187</td></tr>
+<tr><td>668</td><td><img src="img/128290.png" /></td><td>[1234]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F522/index.htm" target="_blank">1F522</a></td><td>F09F94A2</td><td>D83DDD22</td><td></td><td></td><td>EF8396</td></tr>
+<tr><td>669</td><td><img src="img/35.png" /></td><td>#</td><td><a href="http://www.fileformat.info/info/unicode/char/23/index.htm" target="_blank">23</a></td><td>23</td><td>0023</td><td></td><td></td><td></td></tr>
+<tr><td>670</td><td><img src="img/8419.png" /></td><td>⃣</td><td><a href="http://www.fileformat.info/info/unicode/char/20E3/index.htm" target="_blank">20E3</a></td><td>E283A3</td><td>20E3</td><td></td><td></td><td></td></tr>
+<tr><td>671</td><td><img src="img/128291.png" /></td><td>[記号]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F523/index.htm" target="_blank">1F523</a></td><td>F09F94A3</td><td>D83DDD23</td><td></td><td></td><td>EF8397</td></tr>
+<tr><td>672</td><td><img src="img/11014.png" /></td><td>[↑]</td><td><a href="http://www.fileformat.info/info/unicode/char/2B06/index.htm" target="_blank">2B06</a></td><td>E2AC86</td><td>2B06</td><td></td><td>EE88B2</td><td>EF819B</td></tr>
+<tr><td>673</td><td><img src="img/11015.png" /></td><td>[↓]</td><td><a href="http://www.fileformat.info/info/unicode/char/2B07/index.htm" target="_blank">2B07</a></td><td>E2AC87</td><td>2B07</td><td></td><td>EE88B3</td><td>EF819C</td></tr>
+<tr><td>674</td><td><img src="img/11013.png" /></td><td>[←]</td><td><a href="http://www.fileformat.info/info/unicode/char/2B05/index.htm" target="_blank">2B05</a></td><td>E2AC85</td><td>2B05</td><td></td><td>EE88B5</td><td>EF81AF</td></tr>
+<tr><td>675</td><td><img src="img/10145.png" /></td><td>[→]</td><td><a href="http://www.fileformat.info/info/unicode/char/27A1/index.htm" target="_blank">27A1</a></td><td>E29EA1</td><td>27A1</td><td></td><td>EE88B4</td><td>EF81AE</td></tr>
+<tr><td>676</td><td><img src="img/128288.png" /></td><td>[ABCD]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F520/index.htm" target="_blank">1F520</a></td><td>F09F94A0</td><td>D83DDD20</td><td></td><td></td><td>EF8394</td></tr>
+<tr><td>677</td><td><img src="img/128289.png" /></td><td>[abcd]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F521/index.htm" target="_blank">1F521</a></td><td>F09F94A1</td><td>D83DDD21</td><td></td><td></td><td>EF8395</td></tr>
+<tr><td>678</td><td><img src="img/128292.png" /></td><td>[ABC]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F524/index.htm" target="_blank">1F524</a></td><td>F09F94A4</td><td>D83DDD24</td><td></td><td></td><td>EEB599</td></tr>
+<tr><td>679</td><td><img src="img/8599.png" /></td><td>[右斜め上]</td><td><a href="http://www.fileformat.info/info/unicode/char/2197/index.htm" target="_blank">2197</a></td><td>E28697</td><td>2197</td><td>EE99B8</td><td>EE88B6</td><td>EF81B1</td></tr>
+<tr><td>680</td><td><img src="img/8598.png" /></td><td>[左斜め上]</td><td><a href="http://www.fileformat.info/info/unicode/char/2196/index.htm" target="_blank">2196</a></td><td>E28696</td><td>2196</td><td>EE9A97</td><td>EE88B7</td><td>EF81A8</td></tr>
+<tr><td>681</td><td><img src="img/8600.png" /></td><td>[右斜め下]</td><td><a href="http://www.fileformat.info/info/unicode/char/2198/index.htm" target="_blank">2198</a></td><td>E28698</td><td>2198</td><td>EE9A96</td><td>EE88B8</td><td>EF81A9</td></tr>
+<tr><td>682</td><td><img src="img/8601.png" /></td><td>[左斜め下]</td><td><a href="http://www.fileformat.info/info/unicode/char/2199/index.htm" target="_blank">2199</a></td><td>E28699</td><td>2199</td><td>EE9AA5</td><td>EE88B9</td><td>EF81B2</td></tr>
+<tr><td>683</td><td><img src="img/8596.png" /></td><td>[⇔]</td><td><a href="http://www.fileformat.info/info/unicode/char/2194/index.htm" target="_blank">2194</a></td><td>E28694</td><td>2194</td><td>EE9CBC</td><td></td><td>EEB5BE</td></tr>
+<tr><td>684</td><td><img src="img/8597.png" /></td><td>[↑↓]</td><td><a href="http://www.fileformat.info/info/unicode/char/2195/index.htm" target="_blank">2195</a></td><td>E28695</td><td>2195</td><td>EE9CBD</td><td></td><td>EEB680</td></tr>
+<tr><td>685</td><td><img src="img/128260.png" /></td><td>🔄</td><td><a href="http://www.fileformat.info/info/unicode/char/1F504/index.htm" target="_blank">1F504</a></td><td>F09F9484</td><td>D83DDD04</td><td></td><td></td><td></td></tr>
+<tr><td>686</td><td><img src="img/9664.png" /></td><td>[<]</td><td><a href="http://www.fileformat.info/info/unicode/char/25C0/index.htm" target="_blank">25C0</a></td><td>E29780</td><td>25C0</td><td></td><td>EE88BB</td><td>EF8189</td></tr>
+<tr><td>687</td><td><img src="img/9654.png" /></td><td>[>]</td><td><a href="http://www.fileformat.info/info/unicode/char/25B6/index.htm" target="_blank">25B6</a></td><td>E296B6</td><td>25B6</td><td></td><td>EE88BA</td><td>EF818A</td></tr>
+<tr><td>688</td><td><img src="img/128316.png" /></td><td>[▲]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F53C/index.htm" target="_blank">1F53C</a></td><td>F09F94BC</td><td>D83DDD3C</td><td></td><td></td><td>EF819F</td></tr>
+<tr><td>689</td><td><img src="img/128317.png" /></td><td>[▼]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F53D/index.htm" target="_blank">1F53D</a></td><td>F09F94BD</td><td>D83DDD3D</td><td></td><td></td><td>EF819E</td></tr>
+<tr><td>690</td><td><img src="img/8617.png" /></td><td>[←┘]</td><td><a href="http://www.fileformat.info/info/unicode/char/21A9/index.htm" target="_blank">21A9</a></td><td>E286A9</td><td>21A9</td><td>EE9B9A</td><td></td><td>EF81B9</td></tr>
+<tr><td>691</td><td><img src="img/8618.png" /></td><td>[└→]</td><td><a href="http://www.fileformat.info/info/unicode/char/21AA/index.htm" target="_blank">21AA</a></td><td>E286AA</td><td>21AA</td><td></td><td></td><td>EF81B8</td></tr>
+<tr><td>692</td><td><img src="img/8505.png" /></td><td>[ｉ]</td><td><a href="http://www.fileformat.info/info/unicode/char/2139/index.htm" target="_blank">2139</a></td><td>E284B9</td><td>2139</td><td></td><td></td><td>EF818F</td></tr>
+<tr><td>693</td><td><img src="img/9194.png" /></td><td>[<<]</td><td><a href="http://www.fileformat.info/info/unicode/char/23EA/index.htm" target="_blank">23EA</a></td><td>E28FAA</td><td>23EA</td><td></td><td>EE88BD</td><td>EF818B</td></tr>
+<tr><td>694</td><td><img src="img/9193.png" /></td><td>[>>]</td><td><a href="http://www.fileformat.info/info/unicode/char/23E9/index.htm" target="_blank">23E9</a></td><td>E28FA9</td><td>23E9</td><td></td><td>EE88BC</td><td>EF818C</td></tr>
+<tr><td>695</td><td><img src="img/9195.png" /></td><td>[▲]</td><td><a href="http://www.fileformat.info/info/unicode/char/23EB/index.htm" target="_blank">23EB</a></td><td>E28FAB</td><td>23EB</td><td></td><td></td><td>EF81A1</td></tr>
+<tr><td>696</td><td><img src="img/9196.png" /></td><td>[▼]</td><td><a href="http://www.fileformat.info/info/unicode/char/23EC/index.htm" target="_blank">23EC</a></td><td>E28FAC</td><td>23EC</td><td></td><td></td><td>EF81A0</td></tr>
+<tr><td>697</td><td><img src="img/10549.png" /></td><td>[バッド（下向き矢印）]</td><td><a href="http://www.fileformat.info/info/unicode/char/2935/index.htm" target="_blank">2935</a></td><td>E2A4B5</td><td>2935</td><td>EE9C80</td><td>EE88B8</td><td>EEB3AF</td></tr>
+<tr><td>698</td><td><img src="img/10548.png" /></td><td>[グッド（上向き矢印）]</td><td><a href="http://www.fileformat.info/info/unicode/char/2934/index.htm" target="_blank">2934</a></td><td>E2A4B4</td><td>2934</td><td>EE9BB5</td><td>EE88B6</td><td>EEB3AE</td></tr>
+<tr><td>699</td><td><img src="img/127383.png" /></td><td>[決定]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F197/index.htm" target="_blank">1F197</a></td><td>F09F8697</td><td>D83CDD97</td><td>EE9C8B</td><td>EE898D</td><td>EF838A</td></tr>
+<tr><td>700</td><td><img src="img/128256.png" /></td><td>🔀</td><td><a href="http://www.fileformat.info/info/unicode/char/1F500/index.htm" target="_blank">1F500</a></td><td>F09F9480</td><td>D83DDD00</td><td></td><td></td><td></td></tr>
+<tr><td>701</td><td><img src="img/128257.png" /></td><td>🔁</td><td><a href="http://www.fileformat.info/info/unicode/char/1F501/index.htm" target="_blank">1F501</a></td><td>F09F9481</td><td>D83DDD01</td><td></td><td></td><td></td></tr>
+<tr><td>702</td><td><img src="img/128258.png" /></td><td>🔂</td><td><a href="http://www.fileformat.info/info/unicode/char/1F502/index.htm" target="_blank">1F502</a></td><td>F09F9482</td><td>D83DDD02</td><td></td><td></td><td></td></tr>
+<tr><td>703</td><td><img src="img/127381.png" /></td><td>[ＮＥＷ]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F195/index.htm" target="_blank">1F195</a></td><td>F09F8695</td><td>D83CDD95</td><td>EE9B9D</td><td>EE8892</td><td>EF83A5</td></tr>
+<tr><td>704</td><td><img src="img/127385.png" /></td><td>[UP!]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F199/index.htm" target="_blank">1F199</a></td><td>F09F8699</td><td>D83CDD99</td><td></td><td>EE8893</td><td>EEBFA8</td></tr>
+<tr><td>705</td><td><img src="img/127378.png" /></td><td>[COOL]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F192/index.htm" target="_blank">1F192</a></td><td>F09F8692</td><td>D83CDD92</td><td></td><td>EE8894</td><td>EEB198</td></tr>
+<tr><td>706</td><td><img src="img/127379.png" /></td><td>[FREE]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F193/index.htm" target="_blank">1F193</a></td><td>F09F8693</td><td>D83CDD93</td><td>EE9B97</td><td></td><td>EF8295</td></tr>
+<tr><td>707</td><td><img src="img/127382.png" /></td><td>[NG]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F196/index.htm" target="_blank">1F196</a></td><td>F09F8696</td><td>D83CDD96</td><td>EE9CAF</td><td></td><td></td></tr>
+<tr><td>708</td><td><img src="img/128246.png" /></td><td>[バリ3]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F4F6/index.htm" target="_blank">1F4F6</a></td><td>F09F93B6</td><td>D83DDCF6</td><td></td><td>EE888B</td><td>EEB197</td></tr>
+<tr><td>709</td><td><img src="img/127910.png" /></td><td>[映画館]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F3A6/index.htm" target="_blank">1F3A6</a></td><td>F09F8EA6</td><td>D83CDFA6</td><td>EE99B7</td><td>EE9487</td><td>EEBFB0</td></tr>
+<tr><td>710</td><td><img src="img/127489.png" /></td><td>[ココ]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F201/index.htm" target="_blank">1F201</a></td><td>F09F8881</td><td>D83CDE01</td><td></td><td>EE8883</td><td></td></tr>
+<tr><td>711</td><td><img src="img/127535.png" /></td><td>[指]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F22F/index.htm" target="_blank">1F22F</a></td><td>F09F88AF</td><td>D83CDE2F</td><td></td><td>EE88AC</td><td>EEB19E</td></tr>
+<tr><td>712</td><td><img src="img/127539.png" /></td><td>[空室・空席・空車]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F233/index.htm" target="_blank">1F233</a></td><td>F09F88B3</td><td>D83CDE33</td><td>EE9CB9</td><td>EE88AB</td><td>EEB19D</td></tr>
+<tr><td>713</td><td><img src="img/127541.png" /></td><td>[満室・満席・満車]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F235/index.htm" target="_blank">1F235</a></td><td>F09F88B5</td><td>D83CDE35</td><td>EE9CBB</td><td>EE88AA</td><td>EEB19C</td></tr>
+<tr><td>714</td><td><img src="img/127540.png" /></td><td>[合]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F234/index.htm" target="_blank">1F234</a></td><td>F09F88B4</td><td>D83CDE34</td><td>EE9CBA</td><td></td><td></td></tr>
+<tr><td>715</td><td><img src="img/127538.png" /></td><td>[禁]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F232/index.htm" target="_blank">1F232</a></td><td>F09F88B2</td><td>D83CDE32</td><td>EE9CB8</td><td></td><td></td></tr>
+<tr><td>716</td><td><img src="img/127568.png" /></td><td>[得]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F250/index.htm" target="_blank">1F250</a></td><td>F09F8990</td><td>D83CDE50</td><td></td><td>EE88A6</td><td>EEBF90</td></tr>
+<tr><td>717</td><td><img src="img/127545.png" /></td><td>[割]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F239/index.htm" target="_blank">1F239</a></td><td>F09F88B9</td><td>D83CDE39</td><td></td><td>EE88A7</td><td>EEB199</td></tr>
+<tr><td>718</td><td><img src="img/127546.png" /></td><td>[営]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F23A/index.htm" target="_blank">1F23A</a></td><td>F09F88BA</td><td>D83CDE3A</td><td></td><td>EE88AD</td><td>EEB19F</td></tr>
+<tr><td>719</td><td><img src="img/127542.png" /></td><td>[有]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F236/index.htm" target="_blank">1F236</a></td><td>F09F88B6</td><td>D83CDE36</td><td></td><td>EE8895</td><td></td></tr>
+<tr><td>720</td><td><img src="img/127514.png" /></td><td>[無]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F21A/index.htm" target="_blank">1F21A</a></td><td>F09F889A</td><td>D83CDE1A</td><td></td><td>EE8896</td><td></td></tr>
+<tr><td>721</td><td><img src="img/128699.png" /></td><td>[トイレ]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F6BB/index.htm" target="_blank">1F6BB</a></td><td>F09F9ABB</td><td>D83DDEBB</td><td>EE99AE</td><td>EE8591</td><td>EEBDBD</td></tr>
+<tr><td>722</td><td><img src="img/128697.png" /></td><td>[♂]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F6B9/index.htm" target="_blank">1F6B9</a></td><td>F09F9AB9</td><td>D83DDEB9</td><td></td><td>EE84B8</td><td></td></tr>
+<tr><td>723</td><td><img src="img/128698.png" /></td><td>[♀]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F6BA/index.htm" target="_blank">1F6BA</a></td><td>F09F9ABA</td><td>D83DDEBA</td><td></td><td>EE84B9</td><td></td></tr>
+<tr><td>724</td><td><img src="img/128700.png" /></td><td>[赤ちゃん]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F6BC/index.htm" target="_blank">1F6BC</a></td><td>F09F9ABC</td><td>D83DDEBC</td><td></td><td>EE84BA</td><td>EEB399</td></tr>
+<tr><td>725</td><td><img src="img/128702.png" /></td><td>[トイレマーク]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F6BE/index.htm" target="_blank">1F6BE</a></td><td>F09F9ABE</td><td>D83DDEBE</td><td>EE99AE</td><td>EE8C89</td><td>EEBDBD</td></tr>
+<tr><td>726</td><td><img src="img/128688.png" /></td><td>🚰</td><td><a href="http://www.fileformat.info/info/unicode/char/1F6B0/index.htm" target="_blank">1F6B0</a></td><td>F09F9AB0</td><td>D83DDEB0</td><td></td><td></td><td></td></tr>
+<tr><td>727</td><td><img src="img/128686.png" /></td><td>🚮</td><td><a href="http://www.fileformat.info/info/unicode/char/1F6AE/index.htm" target="_blank">1F6AE</a></td><td>F09F9AAE</td><td>D83DDEAE</td><td></td><td></td><td></td></tr>
+<tr><td>728</td><td><img src="img/127359.png" /></td><td>[駐車場]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F17F/index.htm" target="_blank">1F17F</a></td><td>F09F85BF</td><td>D83CDD7F</td><td>EE99AC</td><td>EE858F</td><td>EEBDBE</td></tr>
+<tr><td>729</td><td><img src="img/9855.png" /></td><td>[車椅子]</td><td><a href="http://www.fileformat.info/info/unicode/char/267F/index.htm" target="_blank">267F</a></td><td>E299BF</td><td>267F</td><td>EE9A9B</td><td>EE888A</td><td>EEBD97</td></tr>
+<tr><td>730</td><td><img src="img/128685.png" /></td><td>[禁煙]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F6AD/index.htm" target="_blank">1F6AD</a></td><td>F09F9AAD</td><td>D83DDEAD</td><td>EE9A80</td><td>EE8888</td><td>EEBD96</td></tr>
+<tr><td>731</td><td><img src="img/127543.png" /></td><td>[月]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F237/index.htm" target="_blank">1F237</a></td><td>F09F88B7</td><td>D83CDE37</td><td></td><td>EE8897</td><td></td></tr>
+<tr><td>732</td><td><img src="img/127544.png" /></td><td>[申]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F238/index.htm" target="_blank">1F238</a></td><td>F09F88B8</td><td>D83CDE38</td><td></td><td>EE8898</td><td></td></tr>
+<tr><td>733</td><td><img src="img/127490.png" /></td><td>[サービス]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F202/index.htm" target="_blank">1F202</a></td><td>F09F8882</td><td>D83CDE02</td><td></td><td>EE88A8</td><td>EEB19A</td></tr>
+<tr><td>734</td><td><img src="img/9410.png" /></td><td>[地下鉄]</td><td><a href="http://www.fileformat.info/info/unicode/char/24C2/index.htm" target="_blank">24C2</a></td><td>E29382</td><td>24C2</td><td>EE999C</td><td>EE90B4</td><td>EF83AC</td></tr>
+<tr><td>735</td><td><img src="img/128706.png" /></td><td>🛂</td><td><a href="http://www.fileformat.info/info/unicode/char/1F6C2/index.htm" target="_blank">1F6C2</a></td><td>F09F9B82</td><td>D83DDEC2</td><td></td><td></td><td></td></tr>
+<tr><td>736</td><td><img src="img/128708.png" /></td><td>🛄</td><td><a href="http://www.fileformat.info/info/unicode/char/1F6C4/index.htm" target="_blank">1F6C4</a></td><td>F09F9B84</td><td>D83DDEC4</td><td></td><td></td><td></td></tr>
+<tr><td>737</td><td><img src="img/128709.png" /></td><td>🛅</td><td><a href="http://www.fileformat.info/info/unicode/char/1F6C5/index.htm" target="_blank">1F6C5</a></td><td>F09F9B85</td><td>D83DDEC5</td><td></td><td></td><td></td></tr>
+<tr><td>738</td><td><img src="img/128707.png" /></td><td>🛃</td><td><a href="http://www.fileformat.info/info/unicode/char/1F6C3/index.htm" target="_blank">1F6C3</a></td><td>F09F9B83</td><td>D83DDEC3</td><td></td><td></td><td></td></tr>
+<tr><td>739</td><td><img src="img/127569.png" /></td><td>[可]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F251/index.htm" target="_blank">1F251</a></td><td>F09F8991</td><td>D83CDE51</td><td></td><td></td><td>EF8398</td></tr>
+<tr><td>740</td><td><img src="img/12953.png" /></td><td>[マル秘]</td><td><a href="http://www.fileformat.info/info/unicode/char/3299/index.htm" target="_blank">3299</a></td><td>E38A99</td><td>3299</td><td>EE9CB4</td><td>EE8C95</td><td>EEBF8A</td></tr>
+<tr><td>741</td><td><img src="img/12951.png" /></td><td>[祝]</td><td><a href="http://www.fileformat.info/info/unicode/char/3297/index.htm" target="_blank">3297</a></td><td>E38A97</td><td>3297</td><td></td><td>EE8C8D</td><td>EEB1AC</td></tr>
+<tr><td>742</td><td><img src="img/127377.png" /></td><td>[CL]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F191/index.htm" target="_blank">1F191</a></td><td>F09F8691</td><td>D83CDD91</td><td>EE9B9B</td><td></td><td>EF8388</td></tr>
+<tr><td>743</td><td><img src="img/127384.png" /></td><td>[SOS]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F198/index.htm" target="_blank">1F198</a></td><td>F09F8698</td><td>D83CDD98</td><td></td><td></td><td>EEBF81</td></tr>
+<tr><td>744</td><td><img src="img/127380.png" /></td><td>[ID]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F194/index.htm" target="_blank">1F194</a></td><td>F09F8694</td><td>D83CDD94</td><td>EE9B98</td><td>EE88A9</td><td>EEB19B</td></tr>
+<tr><td>745</td><td><img src="img/128683.png" /></td><td>[禁止]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F6AB/index.htm" target="_blank">1F6AB</a></td><td>F09F9AAB</td><td>D83DDEAB</td><td>EE9CB8</td><td></td><td>EF819D</td></tr>
+<tr><td>746</td><td><img src="img/128286.png" /></td><td>[18禁]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F51E/index.htm" target="_blank">1F51E</a></td><td>F09F949E</td><td>D83DDD1E</td><td></td><td>EE8887</td><td>EEB196</td></tr>
+<tr><td>747</td><td><img src="img/128245.png" /></td><td>📵</td><td><a href="http://www.fileformat.info/info/unicode/char/1F4F5/index.htm" target="_blank">1F4F5</a></td><td>F09F93B5</td><td>D83DDCF5</td><td></td><td></td><td></td></tr>
+<tr><td>748</td><td><img src="img/128687.png" /></td><td>🚯</td><td><a href="http://www.fileformat.info/info/unicode/char/1F6AF/index.htm" target="_blank">1F6AF</a></td><td>F09F9AAF</td><td>D83DDEAF</td><td></td><td></td><td></td></tr>
+<tr><td>749</td><td><img src="img/128689.png" /></td><td>🚱</td><td><a href="http://www.fileformat.info/info/unicode/char/1F6B1/index.htm" target="_blank">1F6B1</a></td><td>F09F9AB1</td><td>D83DDEB1</td><td></td><td></td><td></td></tr>
+<tr><td>750</td><td><img src="img/128691.png" /></td><td>🚳</td><td><a href="http://www.fileformat.info/info/unicode/char/1F6B3/index.htm" target="_blank">1F6B3</a></td><td>F09F9AB3</td><td>D83DDEB3</td><td></td><td></td><td></td></tr>
+<tr><td>751</td><td><img src="img/128695.png" /></td><td>🚷</td><td><a href="http://www.fileformat.info/info/unicode/char/1F6B7/index.htm" target="_blank">1F6B7</a></td><td>F09F9AB7</td><td>D83DDEB7</td><td></td><td></td><td></td></tr>
+<tr><td>752</td><td><img src="img/128696.png" /></td><td>🚸</td><td><a href="http://www.fileformat.info/info/unicode/char/1F6B8/index.htm" target="_blank">1F6B8</a></td><td>F09F9AB8</td><td>D83DDEB8</td><td></td><td></td><td></td></tr>
+<tr><td>753</td><td><img src="img/9940.png" /></td><td>[立ち入り禁止]</td><td><a href="http://www.fileformat.info/info/unicode/char/26D4/index.htm" target="_blank">26D4</a></td><td>E29B94</td><td>26D4</td><td>EE9CAF</td><td>EE84B7</td><td>EEBD9C</td></tr>
+<tr><td>754</td><td><img src="img/10035.png" /></td><td>[星１]</td><td><a href="http://www.fileformat.info/info/unicode/char/2733/index.htm" target="_blank">2733</a></td><td>E29CB3</td><td>2733</td><td>EE9BB8</td><td>EE8886</td><td>EF819A</td></tr>
+<tr><td>755</td><td><img src="img/10055.png" /></td><td>[スパーク]</td><td><a href="http://www.fileformat.info/info/unicode/char/2747/index.htm" target="_blank">2747</a></td><td>E29D87</td><td>2747</td><td>EE9BBA</td><td>EE8CAE</td><td>EEBD84</td></tr>
+<tr><td>756</td><td><img src="img/10062.png" /></td><td>[×]</td><td><a href="http://www.fileformat.info/info/unicode/char/274E/index.htm" target="_blank">274E</a></td><td>E29D8E</td><td>274E</td><td></td><td>EE8CB3</td><td>EF81AD</td></tr>
+<tr><td>757</td><td><img src="img/9989.png" /></td><td>[チェックマーク]</td><td><a href="http://www.fileformat.info/info/unicode/char/2705/index.htm" target="_blank">2705</a></td><td>E29C85</td><td>2705</td><td></td><td></td><td>EF81BA</td></tr>
+<tr><td>758</td><td><img src="img/10036.png" /></td><td>[スパーク２（キラリマーク）]</td><td><a href="http://www.fileformat.info/info/unicode/char/2734/index.htm" target="_blank">2734</a></td><td>E29CB4</td><td>2734</td><td>EE9BB8</td><td>EE8885</td><td>EEBD91</td></tr>
+<tr><td>759</td><td><img src="img/128159.png" /></td><td>[飾り1]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F49F/index.htm" target="_blank">1F49F</a></td><td>F09F929F</td><td>D83DDC9F</td><td>EE9BB8</td><td>EE8884</td><td>EF82B2</td></tr>
+<tr><td>760</td><td><img src="img/127386.png" /></td><td>[VS]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F19A/index.htm" target="_blank">1F19A</a></td><td>F09F869A</td><td>D83CDD9A</td><td></td><td>EE84AE</td><td>EEB185</td></tr>
+<tr><td>761</td><td><img src="img/128243.png" /></td><td>[マナーモード]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F4F3/index.htm" target="_blank">1F4F3</a></td><td>F09F93B3</td><td>D83DDCF3</td><td></td><td>EE8990</td><td>EEB1A3</td></tr>
+<tr><td>762</td><td><img src="img/128244.png" /></td><td>[ケータイOFF]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F4F4/index.htm" target="_blank">1F4F4</a></td><td>F09F93B4</td><td>D83DDCF4</td><td></td><td>EE8991</td><td>EEB1A4</td></tr>
+<tr><td>763</td><td><img src="img/127344.png" /></td><td>[A]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F170/index.htm" target="_blank">1F170</a></td><td>F09F85B0</td><td>D83CDD70</td><td></td><td>EE94B2</td><td>EEB3A7</td></tr>
+<tr><td>764</td><td><img src="img/127345.png" /></td><td>[B]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F171/index.htm" target="_blank">1F171</a></td><td>F09F85B1</td><td>D83CDD71</td><td></td><td>EE94B3</td><td>EEB3A8</td></tr>
+<tr><td>765</td><td><img src="img/127374.png" /></td><td>[AB]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F18E/index.htm" target="_blank">1F18E</a></td><td>F09F868E</td><td>D83CDD8E</td><td></td><td>EE94B4</td><td>EEB3AA</td></tr>
+<tr><td>766</td><td><img src="img/127358.png" /></td><td>[O]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F17E/index.htm" target="_blank">1F17E</a></td><td>F09F85BE</td><td>D83CDD7E</td><td></td><td>EE94B5</td><td>EEB3A9</td></tr>
+<tr><td>767</td><td><img src="img/128160.png" /></td><td>[かわいい]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F4A0/index.htm" target="_blank">1F4A0</a></td><td>F09F92A0</td><td>D83DDCA0</td><td>EE9BB8</td><td></td><td></td></tr>
+<tr><td>768</td><td><img src="img/10175.png" /></td><td>[フリーダイヤル]</td><td><a href="http://www.fileformat.info/info/unicode/char/27BF/index.htm" target="_blank">27BF</a></td><td>E29EBF</td><td>27BF</td><td>EE9B9F</td><td>EE8891</td><td></td></tr>
+<tr><td>769</td><td><img src="img/9851.png" /></td><td>[↑↓]</td><td><a href="http://www.fileformat.info/info/unicode/char/267B/index.htm" target="_blank">267B</a></td><td>E299BB</td><td>267B</td><td>EE9CB5</td><td></td><td>EEB5BD</td></tr>
+<tr><td>770</td><td><img src="img/9800.png" /></td><td>[牡羊座]</td><td><a href="http://www.fileformat.info/info/unicode/char/2648/index.htm" target="_blank">2648</a></td><td>E29988</td><td>2648</td><td>EE9986</td><td>EE88BF</td><td>EEBDA7</td></tr>
+<tr><td>771</td><td><img src="img/9801.png" /></td><td>[牡牛座]</td><td><a href="http://www.fileformat.info/info/unicode/char/2649/index.htm" target="_blank">2649</a></td><td>E29989</td><td>2649</td><td>EE9987</td><td>EE8980</td><td>EEBDA8</td></tr>
+<tr><td>772</td><td><img src="img/9802.png" /></td><td>[双子座]</td><td><a href="http://www.fileformat.info/info/unicode/char/264A/index.htm" target="_blank">264A</a></td><td>E2998A</td><td>264A</td><td>EE9988</td><td>EE8981</td><td>EEBDA9</td></tr>
+<tr><td>773</td><td><img src="img/9803.png" /></td><td>[蟹座]</td><td><a href="http://www.fileformat.info/info/unicode/char/264B/index.htm" target="_blank">264B</a></td><td>E2998B</td><td>264B</td><td>EE9989</td><td>EE8982</td><td>EEBDAA</td></tr>
+<tr><td>774</td><td><img src="img/9804.png" /></td><td>[獅子座]</td><td><a href="http://www.fileformat.info/info/unicode/char/264C/index.htm" target="_blank">264C</a></td><td>E2998C</td><td>264C</td><td>EE998A</td><td>EE8983</td><td>EEBDAB</td></tr>
+<tr><td>775</td><td><img src="img/9805.png" /></td><td>[乙女座]</td><td><a href="http://www.fileformat.info/info/unicode/char/264D/index.htm" target="_blank">264D</a></td><td>E2998D</td><td>264D</td><td>EE998B</td><td>EE8984</td><td>EEBDAC</td></tr>
+<tr><td>776</td><td><img src="img/9806.png" /></td><td>[天秤座]</td><td><a href="http://www.fileformat.info/info/unicode/char/264E/index.htm" target="_blank">264E</a></td><td>E2998E</td><td>264E</td><td>EE998C</td><td>EE8985</td><td>EEBDAD</td></tr>
+<tr><td>777</td><td><img src="img/9807.png" /></td><td>[蠍座]</td><td><a href="http://www.fileformat.info/info/unicode/char/264F/index.htm" target="_blank">264F</a></td><td>E2998F</td><td>264F</td><td>EE998D</td><td>EE8986</td><td>EEBDAE</td></tr>
+<tr><td>778</td><td><img src="img/9808.png" /></td><td>[射手座]</td><td><a href="http://www.fileformat.info/info/unicode/char/2650/index.htm" target="_blank">2650</a></td><td>E29990</td><td>2650</td><td>EE998E</td><td>EE8987</td><td>EEBDAF</td></tr>
+<tr><td>779</td><td><img src="img/9809.png" /></td><td>[山羊座]</td><td><a href="http://www.fileformat.info/info/unicode/char/2651/index.htm" target="_blank">2651</a></td><td>E29991</td><td>2651</td><td>EE998F</td><td>EE8988</td><td>EEBDB0</td></tr>
+<tr><td>780</td><td><img src="img/9810.png" /></td><td>[水瓶座]</td><td><a href="http://www.fileformat.info/info/unicode/char/2652/index.htm" target="_blank">2652</a></td><td>E29992</td><td>2652</td><td>EE9990</td><td>EE8989</td><td>EEBDB1</td></tr>
+<tr><td>781</td><td><img src="img/9811.png" /></td><td>[魚座]</td><td><a href="http://www.fileformat.info/info/unicode/char/2653/index.htm" target="_blank">2653</a></td><td>E29993</td><td>2653</td><td>EE9991</td><td>EE898A</td><td>EEBDB2</td></tr>
+<tr><td>782</td><td><img src="img/9934.png" /></td><td>[蛇使座]</td><td><a href="http://www.fileformat.info/info/unicode/char/26CE/index.htm" target="_blank">26CE</a></td><td>E29B8E</td><td>26CE</td><td></td><td>EE898B</td><td>EEBDB3</td></tr>
+<tr><td>783</td><td><img src="img/128303.png" /></td><td>[占い]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F52F/index.htm" target="_blank">1F52F</a></td><td>F09F94AF</td><td>D83DDD2F</td><td></td><td>EE88BE</td><td>EEB1A2</td></tr>
+<tr><td>784</td><td><img src="img/127975.png" /></td><td>[ＡＴＭ]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F3E7/index.htm" target="_blank">1F3E7</a></td><td>F09F8FA7</td><td>D83CDFE7</td><td>EE99A8</td><td>EE8594</td><td>EEBDBB</td></tr>
+<tr><td>785</td><td><img src="img/128185.png" /></td><td>[株価]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F4B9/index.htm" target="_blank">1F4B9</a></td><td>F09F92B9</td><td>D83DDCB9</td><td></td><td>EE858A</td><td>EEB18F</td></tr>
+<tr><td>786</td><td><img src="img/128178.png" /></td><td>[ドル]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F4B2/index.htm" target="_blank">1F4B2</a></td><td>F09F92B2</td><td>D83DDCB2</td><td>EE9C95</td><td>EE84AF</td><td>EF8296</td></tr>
+<tr><td>787</td><td><img src="img/128177.png" /></td><td>[$￥]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F4B1/index.htm" target="_blank">1F4B1</a></td><td>F09F92B1</td><td>D83DDCB1</td><td></td><td>EE8589</td><td></td></tr>
+<tr><td>788</td><td><img src="img/169.png" /></td><td>[コピーライト]</td><td><a href="http://www.fileformat.info/info/unicode/char/A9/index.htm" target="_blank">A9</a></td><td>C2A9</td><td>00A9</td><td>EE9CB1</td><td>EE898E</td><td>EF81B4</td></tr>
+<tr><td>789</td><td><img src="img/174.png" /></td><td>[レジスタードトレードマーク]</td><td><a href="http://www.fileformat.info/info/unicode/char/AE/index.htm" target="_blank">AE</a></td><td>C2AE</td><td>00AE</td><td>EE9CB6</td><td>EE898F</td><td>EF81B5</td></tr>
+<tr><td>790</td><td><img src="img/8482.png" /></td><td>[トレードマーク]</td><td><a href="http://www.fileformat.info/info/unicode/char/2122/index.htm" target="_blank">2122</a></td><td>E284A2</td><td>2122</td><td>EE9CB2</td><td>EE94B7</td><td>EF81AA</td></tr>
+<tr><td>791</td><td><img src="img/10060.png" /></td><td>[×]</td><td><a href="http://www.fileformat.info/info/unicode/char/274C/index.htm" target="_blank">274C</a></td><td>E29D8C</td><td>274C</td><td></td><td>EE8CB3</td><td>EF81AC</td></tr>
+<tr><td>792</td><td><img src="img/8252.png" /></td><td>[！！]</td><td><a href="http://www.fileformat.info/info/unicode/char/203C/index.htm" target="_blank">203C</a></td><td>E280BC</td><td>203C</td><td>EE9C84</td><td></td><td>EEB3B1</td></tr>
+<tr><td>793</td><td><img src="img/8265.png" /></td><td>[！？]</td><td><a href="http://www.fileformat.info/info/unicode/char/2049/index.htm" target="_blank">2049</a></td><td>E28189</td><td>2049</td><td>EE9C83</td><td></td><td>EEB3B0</td></tr>
+<tr><td>794</td><td><img src="img/10071.png" /></td><td>[exclamation]</td><td><a href="http://www.fileformat.info/info/unicode/char/2757/index.htm" target="_blank">2757</a></td><td>E29D97</td><td>2757</td><td>EE9C82</td><td>EE80A1</td><td>EEBD9A</td></tr>
+<tr><td>795</td><td><img src="img/10067.png" /></td><td>[？]</td><td><a href="http://www.fileformat.info/info/unicode/char/2753/index.htm" target="_blank">2753</a></td><td>E29D93</td><td>2753</td><td></td><td>EE80A0</td><td>EEBD9B</td></tr>
+<tr><td>796</td><td><img src="img/10069.png" /></td><td>[びっくりマーク（アニメ）]</td><td><a href="http://www.fileformat.info/info/unicode/char/2755/index.htm" target="_blank">2755</a></td><td>E29D95</td><td>2755</td><td>EE9C82</td><td>EE8CB7</td><td>EEBD9A</td></tr>
+<tr><td>797</td><td><img src="img/10068.png" /></td><td>[？]</td><td><a href="http://www.fileformat.info/info/unicode/char/2754/index.htm" target="_blank">2754</a></td><td>E29D94</td><td>2754</td><td></td><td>EE8CB6</td><td>EEBD9B</td></tr>
+<tr><td>798</td><td><img src="img/11093.png" /></td><td>[○]</td><td><a href="http://www.fileformat.info/info/unicode/char/2B55/index.htm" target="_blank">2B55</a></td><td>E2AD95</td><td>2B55</td><td>EE9AA0</td><td>EE8CB2</td><td>EEB281</td></tr>
+<tr><td>799</td><td><img src="img/128285.png" /></td><td>[TOP]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F51D/index.htm" target="_blank">1F51D</a></td><td>F09F949D</td><td>D83DDD1D</td><td></td><td>EE898C</td><td></td></tr>
+<tr><td>800</td><td><img src="img/128282.png" /></td><td>[end]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F51A/index.htm" target="_blank">1F51A</a></td><td>F09F949A</td><td>D83DDD1A</td><td>EE9AB9</td><td></td><td></td></tr>
+<tr><td>801</td><td><img src="img/128281.png" /></td><td>[←BACK]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F519/index.htm" target="_blank">1F519</a></td><td>F09F9499</td><td>D83DDD19</td><td></td><td>EE88B5</td><td>EF839D</td></tr>
+<tr><td>802</td><td><img src="img/128283.png" /></td><td>[ON]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F51B/index.htm" target="_blank">1F51B</a></td><td>F09F949B</td><td>D83DDD1B</td><td>EE9AB8</td><td></td><td></td></tr>
+<tr><td>803</td><td><img src="img/128284.png" /></td><td>[SOON]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F51C/index.htm" target="_blank">1F51C</a></td><td>F09F949C</td><td>D83DDD1C</td><td>EE9AB7</td><td></td><td></td></tr>
+<tr><td>804</td><td><img src="img/128259.png" /></td><td>[↑↓]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F503/index.htm" target="_blank">1F503</a></td><td>F09F9483</td><td>D83DDD03</td><td>EE9CB5</td><td></td><td>EF83A4</td></tr>
+<tr><td>805</td><td><img src="img/128347.png" /></td><td>[時計（１２時）]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F55B/index.htm" target="_blank">1F55B</a></td><td>F09F959B</td><td>D83DDD5B</td><td>EE9ABA</td><td>EE80AF</td><td>EF82B1</td></tr>
+<tr><td>806</td><td><img src="img/128359.png" /></td><td>🕧</td><td><a href="http://www.fileformat.info/info/unicode/char/1F567/index.htm" target="_blank">1F567</a></td><td>F09F95A7</td><td>D83DDD67</td><td></td><td></td><td></td></tr>
+<tr><td>807</td><td><img src="img/128336.png" /></td><td>[時計（1時）]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F550/index.htm" target="_blank">1F550</a></td><td>F09F9590</td><td>D83DDD50</td><td>EE9ABA</td><td>EE80A4</td><td>EF82B1</td></tr>
+<tr><td>808</td><td><img src="img/128348.png" /></td><td>🕜</td><td><a href="http://www.fileformat.info/info/unicode/char/1F55C/index.htm" target="_blank">1F55C</a></td><td>F09F959C</td><td>D83DDD5C</td><td></td><td></td><td></td></tr>
+<tr><td>809</td><td><img src="img/128337.png" /></td><td>[時計（２時）]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F551/index.htm" target="_blank">1F551</a></td><td>F09F9591</td><td>D83DDD51</td><td>EE9ABA</td><td>EE80A5</td><td>EF82B1</td></tr>
+<tr><td>810</td><td><img src="img/128349.png" /></td><td>🕝</td><td><a href="http://www.fileformat.info/info/unicode/char/1F55D/index.htm" target="_blank">1F55D</a></td><td>F09F959D</td><td>D83DDD5D</td><td></td><td></td><td></td></tr>
+<tr><td>811</td><td><img src="img/128338.png" /></td><td>[時計（３時）]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F552/index.htm" target="_blank">1F552</a></td><td>F09F9592</td><td>D83DDD52</td><td>EE9ABA</td><td>EE80A6</td><td>EF82B1</td></tr>
+<tr><td>812</td><td><img src="img/128350.png" /></td><td>🕞</td><td><a href="http://www.fileformat.info/info/unicode/char/1F55E/index.htm" target="_blank">1F55E</a></td><td>F09F959E</td><td>D83DDD5E</td><td></td><td></td><td></td></tr>
+<tr><td>813</td><td><img src="img/128339.png" /></td><td>[時計（４時）]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F553/index.htm" target="_blank">1F553</a></td><td>F09F9593</td><td>D83DDD53</td><td>EE9ABA</td><td>EE80A7</td><td>EF82B1</td></tr>
+<tr><td>814</td><td><img src="img/128351.png" /></td><td>🕟</td><td><a href="http://www.fileformat.info/info/unicode/char/1F55F/index.htm" target="_blank">1F55F</a></td><td>F09F959F</td><td>D83DDD5F</td><td></td><td></td><td></td></tr>
+<tr><td>815</td><td><img src="img/128340.png" /></td><td>[時計（５時）]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F554/index.htm" target="_blank">1F554</a></td><td>F09F9594</td><td>D83DDD54</td><td>EE9ABA</td><td>EE80A8</td><td>EF82B1</td></tr>
+<tr><td>816</td><td><img src="img/128352.png" /></td><td>🕠</td><td><a href="http://www.fileformat.info/info/unicode/char/1F560/index.htm" target="_blank">1F560</a></td><td>F09F95A0</td><td>D83DDD60</td><td></td><td></td><td></td></tr>
+<tr><td>817</td><td><img src="img/128341.png" /></td><td>[時計（６時）]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F555/index.htm" target="_blank">1F555</a></td><td>F09F9595</td><td>D83DDD55</td><td>EE9ABA</td><td>EE80A9</td><td>EF82B1</td></tr>
+<tr><td>818</td><td><img src="img/128353.png" /></td><td>🕡</td><td><a href="http://www.fileformat.info/info/unicode/char/1F561/index.htm" target="_blank">1F561</a></td><td>F09F95A1</td><td>D83DDD61</td><td></td><td></td><td></td></tr>
+<tr><td>819</td><td><img src="img/128342.png" /></td><td>[時計（７時）]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F556/index.htm" target="_blank">1F556</a></td><td>F09F9596</td><td>D83DDD56</td><td>EE9ABA</td><td>EE80AA</td><td>EF82B1</td></tr>
+<tr><td>820</td><td><img src="img/128354.png" /></td><td>🕢</td><td><a href="http://www.fileformat.info/info/unicode/char/1F562/index.htm" target="_blank">1F562</a></td><td>F09F95A2</td><td>D83DDD62</td><td></td><td></td><td></td></tr>
+<tr><td>821</td><td><img src="img/128343.png" /></td><td>[時計（８時）]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F557/index.htm" target="_blank">1F557</a></td><td>F09F9597</td><td>D83DDD57</td><td>EE9ABA</td><td>EE80AB</td><td>EF82B1</td></tr>
+<tr><td>822</td><td><img src="img/128355.png" /></td><td>🕣</td><td><a href="http://www.fileformat.info/info/unicode/char/1F563/index.htm" target="_blank">1F563</a></td><td>F09F95A3</td><td>D83DDD63</td><td></td><td></td><td></td></tr>
+<tr><td>823</td><td><img src="img/128344.png" /></td><td>[時計（９時）]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F558/index.htm" target="_blank">1F558</a></td><td>F09F9598</td><td>D83DDD58</td><td>EE9ABA</td><td>EE80AC</td><td>EF82B1</td></tr>
+<tr><td>824</td><td><img src="img/128356.png" /></td><td>🕤</td><td><a href="http://www.fileformat.info/info/unicode/char/1F564/index.htm" target="_blank">1F564</a></td><td>F09F95A4</td><td>D83DDD64</td><td></td><td></td><td></td></tr>
+<tr><td>825</td><td><img src="img/128345.png" /></td><td>[目覚まし時計（１０時）]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F559/index.htm" target="_blank">1F559</a></td><td>F09F9599</td><td>D83DDD59</td><td>EE9ABA</td><td>EE80AD</td><td>EF82B1</td></tr>
+<tr><td>826</td><td><img src="img/128357.png" /></td><td>🕥</td><td><a href="http://www.fileformat.info/info/unicode/char/1F565/index.htm" target="_blank">1F565</a></td><td>F09F95A5</td><td>D83DDD65</td><td></td><td></td><td></td></tr>
+<tr><td>827</td><td><img src="img/128346.png" /></td><td>[時計（１１時）]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F55A/index.htm" target="_blank">1F55A</a></td><td>F09F959A</td><td>D83DDD5A</td><td>EE9ABA</td><td>EE80AE</td><td>EF82B1</td></tr>
+<tr><td>828</td><td><img src="img/128358.png" /></td><td>🕦</td><td><a href="http://www.fileformat.info/info/unicode/char/1F566/index.htm" target="_blank">1F566</a></td><td>F09F95A6</td><td>D83DDD66</td><td></td><td></td><td></td></tr>
+<tr><td>829</td><td><img src="img/10006.png" /></td><td>[×]</td><td><a href="http://www.fileformat.info/info/unicode/char/2716/index.htm" target="_blank">2716</a></td><td>E29C96</td><td>2716</td><td></td><td>EE8CB3</td><td>EF81AB</td></tr>
+<tr><td>830</td><td><img src="img/10133.png" /></td><td>[＋]</td><td><a href="http://www.fileformat.info/info/unicode/char/2795/index.htm" target="_blank">2795</a></td><td>E29E95</td><td>2795</td><td></td><td></td><td>EF8198</td></tr>
+<tr><td>831</td><td><img src="img/10134.png" /></td><td>[－]</td><td><a href="http://www.fileformat.info/info/unicode/char/2796/index.htm" target="_blank">2796</a></td><td>E29E96</td><td>2796</td><td></td><td></td><td>EF8199</td></tr>
+<tr><td>832</td><td><img src="img/10135.png" /></td><td>[÷]</td><td><a href="http://www.fileformat.info/info/unicode/char/2797/index.htm" target="_blank">2797</a></td><td>E29E97</td><td>2797</td><td></td><td></td><td>EF81B0</td></tr>
+<tr><td>833</td><td><img src="img/9824.png" /></td><td>[スペード]</td><td><a href="http://www.fileformat.info/info/unicode/char/2660/index.htm" target="_blank">2660</a></td><td>E299A0</td><td>2660</td><td>EE9A8E</td><td>EE888E</td><td>EF82BE</td></tr>
+<tr><td>834</td><td><img src="img/9829.png" /></td><td>[ハート]</td><td><a href="http://www.fileformat.info/info/unicode/char/2665/index.htm" target="_blank">2665</a></td><td>E299A5</td><td>2665</td><td>EE9A8D</td><td>EE888C</td><td>EEB1B8</td></tr>
+<tr><td>835</td><td><img src="img/9827.png" /></td><td>[クラブ]</td><td><a href="http://www.fileformat.info/info/unicode/char/2663/index.htm" target="_blank">2663</a></td><td>E299A3</td><td>2663</td><td>EE9A90</td><td>EE888F</td><td>EF8380</td></tr>
+<tr><td>836</td><td><img src="img/9830.png" /></td><td>[ダイヤ]</td><td><a href="http://www.fileformat.info/info/unicode/char/2666/index.htm" target="_blank">2666</a></td><td>E299A6</td><td>2666</td><td>EE9A8F</td><td>EE888D</td><td>EF82BF</td></tr>
+<tr><td>837</td><td><img src="img/128174.png" /></td><td>[花丸]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F4AE/index.htm" target="_blank">1F4AE</a></td><td>F09F92AE</td><td>D83DDCAE</td><td></td><td></td><td>EEBF89</td></tr>
+<tr><td>838</td><td><img src="img/128175.png" /></td><td>[100点]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F4AF/index.htm" target="_blank">1F4AF</a></td><td>F09F92AF</td><td>D83DDCAF</td><td></td><td></td><td>EEBF8B</td></tr>
+<tr><td>839</td><td><img src="img/10004.png" /></td><td>[チェックマーク]</td><td><a href="http://www.fileformat.info/info/unicode/char/2714/index.htm" target="_blank">2714</a></td><td>E29C94</td><td>2714</td><td></td><td></td><td>EF81B3</td></tr>
+<tr><td>840</td><td><img src="img/9745.png" /></td><td>[チェックマーク]</td><td><a href="http://www.fileformat.info/info/unicode/char/2611/index.htm" target="_blank">2611</a></td><td>E29891</td><td>2611</td><td></td><td></td><td>EF8399</td></tr>
+<tr><td>841</td><td><img src="img/128280.png" /></td><td>[ラジオボタン]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F518/index.htm" target="_blank">1F518</a></td><td>F09F9498</td><td>D83DDD18</td><td></td><td></td><td>EF839B</td></tr>
+<tr><td>842</td><td><img src="img/128279.png" /></td><td>[リンク]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F517/index.htm" target="_blank">1F517</a></td><td>F09F9497</td><td>D83DDD17</td><td></td><td></td><td>EF82A7</td></tr>
+<tr><td>843</td><td><img src="img/10160.png" /></td><td>[～]</td><td><a href="http://www.fileformat.info/info/unicode/char/27B0/index.htm" target="_blank">27B0</a></td><td>E29EB0</td><td>27B0</td><td>EE9C8A</td><td></td><td>EEB3B2</td></tr>
+<tr><td>844</td><td><img src="img/12336.png" /></td><td>[ー（長音記号１）]</td><td><a href="http://www.fileformat.info/info/unicode/char/3030/index.htm" target="_blank">3030</a></td><td>E380B0</td><td>3030</td><td>EE9C89</td><td></td><td></td></tr>
+<tr><td>845</td><td><img src="img/12349.png" /></td><td>[歌記号]</td><td><a href="http://www.fileformat.info/info/unicode/char/303D/index.htm" target="_blank">303D</a></td><td>E380BD</td><td>303D</td><td></td><td>EE84AC</td><td></td></tr>
+<tr><td>846</td><td><img src="img/128305.png" /></td><td>[エンブレム]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F531/index.htm" target="_blank">1F531</a></td><td>F09F94B1</td><td>D83DDD31</td><td>EE9C9A</td><td>EE80B1</td><td>EF83B9</td></tr>
+<tr><td>847</td><td><img src="img/9724.png" /></td><td>[■]</td><td><a href="http://www.fileformat.info/info/unicode/char/25FC/index.htm" target="_blank">25FC</a></td><td>E297BC</td><td>25FC</td><td></td><td>EE889A</td><td>EF8195</td></tr>
+<tr><td>848</td><td><img src="img/9723.png" /></td><td>[■]</td><td><a href="http://www.fileformat.info/info/unicode/char/25FB/index.htm" target="_blank">25FB</a></td><td>E297BB</td><td>25FB</td><td></td><td>EE889B</td><td>EF8194</td></tr>
+<tr><td>849</td><td><img src="img/9726.png" /></td><td>[■]</td><td><a href="http://www.fileformat.info/info/unicode/char/25FE/index.htm" target="_blank">25FE</a></td><td>E297BE</td><td>25FE</td><td></td><td>EE889A</td><td>EF8191</td></tr>
+<tr><td>850</td><td><img src="img/9725.png" /></td><td>[■]</td><td><a href="http://www.fileformat.info/info/unicode/char/25FD/index.htm" target="_blank">25FD</a></td><td>E297BD</td><td>25FD</td><td></td><td>EE889B</td><td>EF8190</td></tr>
+<tr><td>851</td><td><img src="img/9642.png" /></td><td>[■]</td><td><a href="http://www.fileformat.info/info/unicode/char/25AA/index.htm" target="_blank">25AA</a></td><td>E296AA</td><td>25AA</td><td></td><td>EE889A</td><td>EF818E</td></tr>
+<tr><td>852</td><td><img src="img/9643.png" /></td><td>[■]</td><td><a href="http://www.fileformat.info/info/unicode/char/25AB/index.htm" target="_blank">25AB</a></td><td>E296AB</td><td>25AB</td><td></td><td>EE889B</td><td>EF818D</td></tr>
+<tr><td>853</td><td><img src="img/128314.png" /></td><td>[▲]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F53A/index.htm" target="_blank">1F53A</a></td><td>F09F94BA</td><td>D83DDD3A</td><td></td><td></td><td>EF81B6</td></tr>
+<tr><td>854</td><td><img src="img/128306.png" /></td><td>[大丸２]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F532/index.htm" target="_blank">1F532</a></td><td>F09F94B2</td><td>D83DDD32</td><td>EE9A9C</td><td>EE889A</td><td>EF81A7</td></tr>
+<tr><td>855</td><td><img src="img/128307.png" /></td><td>[ボタン３]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F533/index.htm" target="_blank">1F533</a></td><td>F09F94B3</td><td>D83DDD33</td><td>EE9A9C</td><td>EE889B</td><td>EF81A7</td></tr>
+<tr><td>856</td><td><img src="img/9899.png" /></td><td>[小丸2]</td><td><a href="http://www.fileformat.info/info/unicode/char/26AB/index.htm" target="_blank">26AB</a></td><td>E29AAB</td><td>26AB</td><td>EE9A9C</td><td>EE8899</td><td>EF8197</td></tr>
+<tr><td>857</td><td><img src="img/9898.png" /></td><td>[小丸１]</td><td><a href="http://www.fileformat.info/info/unicode/char/26AA/index.htm" target="_blank">26AA</a></td><td>E29AAA</td><td>26AA</td><td>EE9A9C</td><td>EE8899</td><td>EF8196</td></tr>
+<tr><td>858</td><td><img src="img/128308.png" /></td><td>[大丸１]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F534/index.htm" target="_blank">1F534</a></td><td>F09F94B4</td><td>D83DDD34</td><td>EE9A9C</td><td>EE8899</td><td>EF81A6</td></tr>
+<tr><td>859</td><td><img src="img/128309.png" /></td><td>[大丸２]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F535/index.htm" target="_blank">1F535</a></td><td>F09F94B5</td><td>D83DDD35</td><td>EE9A9C</td><td>EE889A</td><td>EF81A7</td></tr>
+<tr><td>860</td><td><img src="img/128315.png" /></td><td>[▼]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F53B/index.htm" target="_blank">1F53B</a></td><td>F09F94BB</td><td>D83DDD3B</td><td></td><td></td><td>EF81B7</td></tr>
+<tr><td>861</td><td><img src="img/11036.png" /></td><td>[■]</td><td><a href="http://www.fileformat.info/info/unicode/char/2B1C/index.htm" target="_blank">2B1C</a></td><td>E2AC9C</td><td>2B1C</td><td></td><td>EE889B</td><td>EF81A4</td></tr>
+<tr><td>862</td><td><img src="img/11035.png" /></td><td>[■]</td><td><a href="http://www.fileformat.info/info/unicode/char/2B1B/index.htm" target="_blank">2B1B</a></td><td>E2AC9B</td><td>2B1B</td><td></td><td>EE889A</td><td>EF81A5</td></tr>
+<tr><td>863</td><td><img src="img/128310.png" /></td><td>[◆]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F536/index.htm" target="_blank">1F536</a></td><td>F09F94B6</td><td>D83DDD36</td><td></td><td>EE889B</td><td>EF81A2</td></tr>
+<tr><td>864</td><td><img src="img/128311.png" /></td><td>[◆]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F537/index.htm" target="_blank">1F537</a></td><td>F09F94B7</td><td>D83DDD37</td><td></td><td>EE889B</td><td>EF81A3</td></tr>
+<tr><td>865</td><td><img src="img/128312.png" /></td><td>[◆]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F538/index.htm" target="_blank">1F538</a></td><td>F09F94B8</td><td>D83DDD38</td><td></td><td>EE889B</td><td>EF8192</td></tr>
+<tr><td>866</td><td><img src="img/128313.png" /></td><td>[◆]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F539/index.htm" target="_blank">1F539</a></td><td>F09F94B9</td><td>D83DDD39</td><td></td><td>EE889B</td><td>EF8193</td></tr>
+                </tbody>
+            </table>
+            </section>
+        </div> 
+    </body>
+</html>

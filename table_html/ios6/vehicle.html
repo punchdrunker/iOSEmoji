@@ -1,0 +1,177 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset=utf8>
+        <meta http-equiv="Content-Script-Type" content="text/javascript">
+        <link href="../bootstrap/css/bootstrap.css" rel="stylesheet">
+        <script type="text/javascript" src="../js/jquery-1.7.1.min.js"></script>
+        <script type="text/javascript" src="../bootstrap/js/bootstrap.js"></script>
+        <script type="text/javascript" src="../js/my.js"></script>
+        <link rel="stylesheet" href="../css/style.css">
+        <title>iOS Emoji</title>
+    </head>
+    <body>
+        <div class="navbar navbar-fixed-top"> 
+            <div class="navbar-inner"> 
+                <div class="container"> 
+                    <a href="index.html" class="brand">iOS Emoji</a>
+                    <ul class="nav"> 
+                        <li><a href="index.html">Smiley</a></li> 
+                        <li><a href="flower.html">Flower</a></li> 
+                        <li><a href="bell.html">Bell</a></li> 
+                        <li><a href="vehicle.html">Vehicle</a></li> 
+                        <li><a href="number.html">Number</a></li> 
+                    </ul> 
+                </div> 
+            </div> 
+        </div> 
+
+        <div class="container">
+            <h3>About</h3>
+            <p>iOS6から利用できるunicode6な絵文字のキャプチャ画像とUnicodeコードポイント,UTF8,UTF16での文字コードの対応表です。</p>
+            <p>文字の並びはiPhone/iPadの並びと揃えています。</p>
+            <p>画像が多いので、GithubPagesでは分割版のhtmlにしています。統合版のhtmlは<a href="https://github.com/punchdrunker/iOSEmoji">masterブランチ</a>に入っているので、必要な方はそちらをご利用ください。</p>
+            <p><a href="emoji_ios6.json"><i class="icon-file"></i>JSON配列(ソート済み/UTF16)はこちら</a></p>
+
+            <h3>TODO(不具合)</h3>
+            <ul>
+            <li>一部の文字は黒い四角のような画像になっていますが、iOS6のフォントにしかないグリフのため、まだ準備中です。</li>
+            <li>一部の文字は名前はまだ無い、ですが後日入れます。</li>
+            <li>国旗と囲い文字がまだおかしな事になってますが、数日中に直します。。。(値としては合っているけど、合字と結合文字の扱いをうまく捌けてない)</li>
+            </ul>
+
+            <section id="vehicle">
+            <h3>vehicle</h3>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>No.</th>
+                        <th>image</th>
+                        <th>name</th>
+                        <th>Unicode</th>
+                        <th>UTF-8</th>
+                        <th>UTF-16</th>
+                        <th>docomo UTF-8</th>
+                        <th>softbank UTF-8</th>
+                        <th>kddi UTF-8</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+<tr><td>536</td><td><img src="img/127968.png" /></td><td>[家]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F3E0/index.htm" target="_blank">1F3E0</a></td><td>F09F8FA0</td><td>D83CDFE0</td><td>EE99A3</td><td>EE80B6</td><td>EEBE84</td></tr>
+<tr><td>537</td><td><img src="img/127969.png" /></td><td>[ホーム]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F3E1/index.htm" target="_blank">1F3E1</a></td><td>F09F8FA1</td><td>D83CDFE1</td><td>EE99A3</td><td>EE80B6</td><td>EF83A0</td></tr>
+<tr><td>538</td><td><img src="img/127979.png" /></td><td>[学校]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F3EB/index.htm" target="_blank">1F3EB</a></td><td>F09F8FAB</td><td>D83CDFEB</td><td>EE9CBE</td><td>EE8597</td><td>EEB193</td></tr>
+<tr><td>539</td><td><img src="img/127970.png" /></td><td>[ビル]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F3E2/index.htm" target="_blank">1F3E2</a></td><td>F09F8FA2</td><td>D83CDFE2</td><td>EE99A4</td><td>EE80B8</td><td>EEBE86</td></tr>
+<tr><td>540</td><td><img src="img/127971.png" /></td><td>[郵便局]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F3E3/index.htm" target="_blank">1F3E3</a></td><td>F09F8FA3</td><td>D83CDFE3</td><td>EE99A5</td><td>EE8593</td><td>EEB191</td></tr>
+<tr><td>541</td><td><img src="img/127973.png" /></td><td>[病院]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F3E5/index.htm" target="_blank">1F3E5</a></td><td>F09F8FA5</td><td>D83CDFE5</td><td>EE99A6</td><td>EE8595</td><td>EEB192</td></tr>
+<tr><td>542</td><td><img src="img/127974.png" /></td><td>[銀行]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F3E6/index.htm" target="_blank">1F3E6</a></td><td>F09F8FA6</td><td>D83CDFE6</td><td>EE99A7</td><td>EE858D</td><td>EEBE83</td></tr>
+<tr><td>543</td><td><img src="img/127978.png" /></td><td>[コンビニ]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F3EA/index.htm" target="_blank">1F3EA</a></td><td>F09F8FAA</td><td>D83CDFEA</td><td>EE99AA</td><td>EE8596</td><td>EEBDBC</td></tr>
+<tr><td>544</td><td><img src="img/127977.png" /></td><td>[ホテル２]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F3E9/index.htm" target="_blank">1F3E9</a></td><td>F09F8FA9</td><td>D83CDFE9</td><td>EE99A9EE9BAF</td><td>EE9481</td><td>EEB387</td></tr>
+<tr><td>545</td><td><img src="img/127976.png" /></td><td>[ホテル]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F3E8/index.htm" target="_blank">1F3E8</a></td><td>F09F8FA8</td><td>D83CDFE8</td><td>EE99A9</td><td>EE8598</td><td>EEB194</td></tr>
+<tr><td>546</td><td><img src="img/128146.png" /></td><td>[結婚式]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F492/index.htm" target="_blank">1F492</a></td><td>F09F9292</td><td>D83DDC92</td><td></td><td>EE90BD</td><td>EF83AB</td></tr>
+<tr><td>547</td><td><img src="img/9962.png" /></td><td>[教会]</td><td><a href="http://www.fileformat.info/info/unicode/char/26EA/index.htm" target="_blank">26EA</a></td><td>E29BAA</td><td>26EA</td><td></td><td>EE80B7</td><td>EF83AB</td></tr>
+<tr><td>548</td><td><img src="img/127980.png" /></td><td>[デパート]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F3EC/index.htm" target="_blank">1F3EC</a></td><td>F09F8FAC</td><td>D83CDFEC</td><td></td><td>EE9484</td><td>EEB38A</td></tr>
+<tr><td>549</td><td><img src="img/127972.png" /></td><td>🏤</td><td><a href="http://www.fileformat.info/info/unicode/char/1F3E4/index.htm" target="_blank">1F3E4</a></td><td>F09F8FA4</td><td>D83CDFE4</td><td></td><td></td><td></td></tr>
+<tr><td>550</td><td><img src="img/127751.png" /></td><td>[夕日]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F307/index.htm" target="_blank">1F307</a></td><td>F09F8C87</td><td>D83CDF07</td><td>EE98BE</td><td>EE918A</td><td>EEB18D</td></tr>
+<tr><td>551</td><td><img src="img/127750.png" /></td><td>[夕焼け]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F306/index.htm" target="_blank">1F306</a></td><td>F09F8C86</td><td>D83CDF06</td><td></td><td>EE8586</td><td>EEB18D</td></tr>
+<tr><td>552</td><td><img src="img/127983.png" /></td><td>[城]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F3EF/index.htm" target="_blank">1F3EF</a></td><td>F09F8FAF</td><td>D83CDFEF</td><td></td><td>EE9485</td><td>EEB38B</td></tr>
+<tr><td>553</td><td><img src="img/127984.png" /></td><td>[城]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F3F0/index.htm" target="_blank">1F3F0</a></td><td>F09F8FB0</td><td>D83CDFF0</td><td></td><td>EE9486</td><td>EEB38C</td></tr>
+<tr><td>554</td><td><img src="img/9978.png" /></td><td>[キャンプ]</td><td><a href="http://www.fileformat.info/info/unicode/char/26FA/index.htm" target="_blank">26FA</a></td><td>E29BBA</td><td>26FA</td><td></td><td>EE84A2</td><td>EEB183</td></tr>
+<tr><td>555</td><td><img src="img/127981.png" /></td><td>[工場]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F3ED/index.htm" target="_blank">1F3ED</a></td><td>F09F8FAD</td><td>D83CDFED</td><td></td><td>EE9488</td><td>EEB38D</td></tr>
+<tr><td>556</td><td><img src="img/128508.png" /></td><td>[東京タワー]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F5FC/index.htm" target="_blank">1F5FC</a></td><td>F09F97BC</td><td>D83DDDFC</td><td></td><td>EE9489</td><td>EEBE99</td></tr>
+<tr><td>557</td><td><img src="img/128510.png" /></td><td>[日本地図]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F5FE/index.htm" target="_blank">1F5FE</a></td><td>F09F97BE</td><td>D83DDDFE</td><td></td><td></td><td>EF828F</td></tr>
+<tr><td>558</td><td><img src="img/128507.png" /></td><td>[富士山]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F5FB/index.htm" target="_blank">1F5FB</a></td><td>F09F97BB</td><td>D83DDDFB</td><td>EE9D80</td><td>EE80BB</td><td>EF83AD</td></tr>
+<tr><td>559</td><td><img src="img/127748.png" /></td><td>[日の出]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F304/index.htm" target="_blank">1F304</a></td><td>F09F8C84</td><td>D83CDF04</td><td>EE98BE</td><td>EE818D</td><td>EEB388</td></tr>
+<tr><td>560</td><td><img src="img/127749.png" /></td><td>[日の出]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F305/index.htm" target="_blank">1F305</a></td><td>F09F8C85</td><td>D83CDF05</td><td>EE98BE</td><td>EE9189</td><td>EEB388</td></tr>
+<tr><td>561</td><td><img src="img/127747.png" /></td><td>[夜]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F303/index.htm" target="_blank">1F303</a></td><td>F09F8C83</td><td>D83CDF03</td><td>EE9AB3</td><td>EE918B</td><td>EEB385</td></tr>
+<tr><td>562</td><td><img src="img/128509.png" /></td><td>[自由の女神]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F5FD/index.htm" target="_blank">1F5FD</a></td><td>F09F97BD</td><td>D83DDDFD</td><td></td><td>EE949D</td><td></td></tr>
+<tr><td>563</td><td><img src="img/127753.png" /></td><td>[夜の橋]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F309/index.htm" target="_blank">1F309</a></td><td>F09F8C89</td><td>D83CDF09</td><td>EE9AB3</td><td>EE918B</td><td>EEBE98</td></tr>
+<tr><td>564</td><td><img src="img/127904.png" /></td><td>[遊園地]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F3A0/index.htm" target="_blank">1F3A0</a></td><td>F09F8EA0</td><td>D83CDFA0</td><td>EE99B9</td><td></td><td></td></tr>
+<tr><td>565</td><td><img src="img/127905.png" /></td><td>[観覧車]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F3A1/index.htm" target="_blank">1F3A1</a></td><td>F09F8EA1</td><td>D83CDFA1</td><td></td><td>EE84A4</td><td>EEBD85</td></tr>
+<tr><td>566</td><td><img src="img/9970.png" /></td><td>[噴水]</td><td><a href="http://www.fileformat.info/info/unicode/char/26F2/index.htm" target="_blank">26F2</a></td><td>E29BB2</td><td>26F2</td><td></td><td>EE84A1</td><td>EEB182</td></tr>
+<tr><td>567</td><td><img src="img/127906.png" /></td><td>[ジェットコースター]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F3A2/index.htm" target="_blank">1F3A2</a></td><td>F09F8EA2</td><td>D83CDFA2</td><td></td><td>EE90B3</td><td>EEB2B6</td></tr>
+<tr><td>568</td><td><img src="img/128674.png" /></td><td>[船]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F6A2/index.htm" target="_blank">1F6A2</a></td><td>F09F9AA2</td><td>D83DDEA2</td><td>EE99A1</td><td>EE8882</td><td>EEB195</td></tr>
+<tr><td>569</td><td><img src="img/9973.png" /></td><td>[リゾート]</td><td><a href="http://www.fileformat.info/info/unicode/char/26F5/index.htm" target="_blank">26F5</a></td><td>E29BB5</td><td>26F5</td><td>EE9AA3</td><td>EE809C</td><td>EEBE8D</td></tr>
+<tr><td>570</td><td><img src="img/128676.png" /></td><td>[ボート（競艇）]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F6A4/index.htm" target="_blank">1F6A4</a></td><td>F09F9AA4</td><td>D83DDEA4</td><td>EE9AA3</td><td>EE84B5</td><td>EEBE8D</td></tr>
+<tr><td>571</td><td><img src="img/128675.png" /></td><td>🚣</td><td><a href="http://www.fileformat.info/info/unicode/char/1F6A3/index.htm" target="_blank">1F6A3</a></td><td>F09F9AA3</td><td>D83DDEA3</td><td></td><td></td><td></td></tr>
+<tr><td>572</td><td><img src="img/9875.png" /></td><td>[港（いかりマーク）]</td><td><a href="http://www.fileformat.info/info/unicode/char/2693/index.htm" target="_blank">2693</a></td><td>E29A93</td><td>2693</td><td>EE99A1</td><td>EE8882</td><td>EEBE82</td></tr>
+<tr><td>573</td><td><img src="img/128640.png" /></td><td>[ロケット]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F680/index.htm" target="_blank">1F680</a></td><td>F09F9A80</td><td>D83DDE80</td><td></td><td>EE848D</td><td>EF83B8</td></tr>
+<tr><td>574</td><td><img src="img/9992.png" /></td><td>[飛行機]</td><td><a href="http://www.fileformat.info/info/unicode/char/2708/index.htm" target="_blank">2708</a></td><td>E29C88</td><td>2708</td><td>EE99A2</td><td>EE809D</td><td>EEBE8C</td></tr>
+<tr><td>575</td><td><img src="img/128186.png" /></td><td>[いす]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F4BA/index.htm" target="_blank">1F4BA</a></td><td>F09F92BA</td><td>D83DDCBA</td><td>EE9AB2</td><td>EE849F</td><td></td></tr>
+<tr><td>576</td><td><img src="img/128641.png" /></td><td>🚁</td><td><a href="http://www.fileformat.info/info/unicode/char/1F681/index.htm" target="_blank">1F681</a></td><td>F09F9A81</td><td>D83DDE81</td><td></td><td></td><td></td></tr>
+<tr><td>577</td><td><img src="img/128642.png" /></td><td>🚂</td><td><a href="http://www.fileformat.info/info/unicode/char/1F682/index.htm" target="_blank">1F682</a></td><td>F09F9A82</td><td>D83DDE82</td><td></td><td></td><td></td></tr>
+<tr><td>578</td><td><img src="img/128650.png" /></td><td>🚊</td><td><a href="http://www.fileformat.info/info/unicode/char/1F68A/index.htm" target="_blank">1F68A</a></td><td>F09F9A8A</td><td>D83DDE8A</td><td></td><td></td><td></td></tr>
+<tr><td>579</td><td><img src="img/128649.png" /></td><td>[駅]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F689/index.htm" target="_blank">1F689</a></td><td>F09F9A89</td><td>D83DDE89</td><td></td><td>EE80B9</td><td>EEB5B1</td></tr>
+<tr><td>580</td><td><img src="img/128654.png" /></td><td>🚎</td><td><a href="http://www.fileformat.info/info/unicode/char/1F68E/index.htm" target="_blank">1F68E</a></td><td>F09F9A8E</td><td>D83DDE8E</td><td></td><td></td><td></td></tr>
+<tr><td>581</td><td><img src="img/128646.png" /></td><td>🚆</td><td><a href="http://www.fileformat.info/info/unicode/char/1F686/index.htm" target="_blank">1F686</a></td><td>F09F9A86</td><td>D83DDE86</td><td></td><td></td><td></td></tr>
+<tr><td>582</td><td><img src="img/128644.png" /></td><td>[新幹線]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F684/index.htm" target="_blank">1F684</a></td><td>F09F9A84</td><td>D83DDE84</td><td>EE999D</td><td>EE90B5</td><td>EEBE89</td></tr>
+<tr><td>583</td><td><img src="img/128645.png" /></td><td>[新幹線]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F685/index.htm" target="_blank">1F685</a></td><td>F09F9A85</td><td>D83DDE85</td><td>EE999D</td><td>EE809F</td><td>EEBE89</td></tr>
+<tr><td>584</td><td><img src="img/128648.png" /></td><td>🚈</td><td><a href="http://www.fileformat.info/info/unicode/char/1F688/index.htm" target="_blank">1F688</a></td><td>F09F9A88</td><td>D83DDE88</td><td></td><td></td><td></td></tr>
+<tr><td>585</td><td><img src="img/128647.png" /></td><td>[地下鉄]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F687/index.htm" target="_blank">1F687</a></td><td>F09F9A87</td><td>D83DDE87</td><td>EE999C</td><td>EE90B4</td><td>EF83AC</td></tr>
+<tr><td>586</td><td><img src="img/128669.png" /></td><td>🚝</td><td><a href="http://www.fileformat.info/info/unicode/char/1F69D/index.htm" target="_blank">1F69D</a></td><td>F09F9A9D</td><td>D83DDE9D</td><td></td><td></td><td></td></tr>
+<tr><td>587</td><td><img src="img/128651.png" /></td><td>🚋</td><td><a href="http://www.fileformat.info/info/unicode/char/1F68B/index.htm" target="_blank">1F68B</a></td><td>F09F9A8B</td><td>D83DDE8B</td><td></td><td></td><td></td></tr>
+<tr><td>588</td><td><img src="img/128643.png" /></td><td>[電車]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F683/index.htm" target="_blank">1F683</a></td><td>F09F9A83</td><td>D83DDE83</td><td>EE999B</td><td>EE809E</td><td>EEBE8E</td></tr>
+<tr><td>589</td><td><img src="img/128654.png" /></td><td>🚎</td><td><a href="http://www.fileformat.info/info/unicode/char/1F68E/index.htm" target="_blank">1F68E</a></td><td>F09F9A8E</td><td>D83DDE8E</td><td></td><td></td><td></td></tr>
+<tr><td>590</td><td><img src="img/128652.png" /></td><td>[バス]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F68C/index.htm" target="_blank">1F68C</a></td><td>F09F9A8C</td><td>D83DDE8C</td><td>EE99A0</td><td>EE8599</td><td>EEBE88</td></tr>
+<tr><td>591</td><td><img src="img/128653.png" /></td><td>🚍</td><td><a href="http://www.fileformat.info/info/unicode/char/1F68D/index.htm" target="_blank">1F68D</a></td><td>F09F9A8D</td><td>D83DDE8D</td><td></td><td></td><td></td></tr>
+<tr><td>592</td><td><img src="img/128665.png" /></td><td>[車（ＲＶ）]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F699/index.htm" target="_blank">1F699</a></td><td>F09F9A99</td><td>D83DDE99</td><td>EE999F</td><td>EE90AE</td><td>EEBE8A</td></tr>
+<tr><td>593</td><td><img src="img/128664.png" /></td><td>🚘</td><td><a href="http://www.fileformat.info/info/unicode/char/1F698/index.htm" target="_blank">1F698</a></td><td>F09F9A98</td><td>D83DDE98</td><td></td><td></td><td></td></tr>
+<tr><td>594</td><td><img src="img/128663.png" /></td><td>[車（セダン）]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F697/index.htm" target="_blank">1F697</a></td><td>F09F9A97</td><td>D83DDE97</td><td>EE999E</td><td>EE809B</td><td>EEBE8A</td></tr>
+<tr><td>595</td><td><img src="img/128661.png" /></td><td>[タクシー]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F695/index.htm" target="_blank">1F695</a></td><td>F09F9A95</td><td>D83DDE95</td><td>EE999E</td><td>EE859A</td><td>EEBE8A</td></tr>
+<tr><td>596</td><td><img src="img/128662.png" /></td><td>🚖</td><td><a href="http://www.fileformat.info/info/unicode/char/1F696/index.htm" target="_blank">1F696</a></td><td>F09F9A96</td><td>D83DDE96</td><td></td><td></td><td></td></tr>
+<tr><td>597</td><td><img src="img/128667.png" /></td><td>🚛</td><td><a href="http://www.fileformat.info/info/unicode/char/1F69B/index.htm" target="_blank">1F69B</a></td><td>F09F9A9B</td><td>D83DDE9B</td><td></td><td></td><td></td></tr>
+<tr><td>598</td><td><img src="img/128666.png" /></td><td>[トラック]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F69A/index.htm" target="_blank">1F69A</a></td><td>F09F9A9A</td><td>D83DDE9A</td><td></td><td>EE90AF</td><td>EEBE8B</td></tr>
+<tr><td>599</td><td><img src="img/128680.png" /></td><td>[パトカー]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F6A8/index.htm" target="_blank">1F6A8</a></td><td>F09F9AA8</td><td>D83DDEA8</td><td></td><td>EE90B2</td><td>EEB5B7</td></tr>
+<tr><td>600</td><td><img src="img/128659.png" /></td><td>[パトカー]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F693/index.htm" target="_blank">1F693</a></td><td>F09F9A93</td><td>D83DDE93</td><td></td><td>EE90B2</td><td>EEB2B5</td></tr>
+<tr><td>601</td><td><img src="img/128660.png" /></td><td>🚔</td><td><a href="http://www.fileformat.info/info/unicode/char/1F694/index.htm" target="_blank">1F694</a></td><td>F09F9A94</td><td>D83DDE94</td><td></td><td></td><td></td></tr>
+<tr><td>602</td><td><img src="img/128658.png" /></td><td>[消防車]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F692/index.htm" target="_blank">1F692</a></td><td>F09F9A92</td><td>D83DDE92</td><td></td><td>EE90B0</td><td>EEB2B3</td></tr>
+<tr><td>603</td><td><img src="img/128657.png" /></td><td>[救急車]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F691/index.htm" target="_blank">1F691</a></td><td>F09F9A91</td><td>D83DDE91</td><td></td><td>EE90B1</td><td>EEB2B4</td></tr>
+<tr><td>604</td><td><img src="img/128656.png" /></td><td>🚐</td><td><a href="http://www.fileformat.info/info/unicode/char/1F690/index.htm" target="_blank">1F690</a></td><td>F09F9A90</td><td>D83DDE90</td><td></td><td></td><td></td></tr>
+<tr><td>605</td><td><img src="img/128690.png" /></td><td>[自転車]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F6B2/index.htm" target="_blank">1F6B2</a></td><td>F09F9AB2</td><td>D83DDEB2</td><td>EE9C9D</td><td>EE84B6</td><td>EEBE87</td></tr>
+<tr><td>606</td><td><img src="img/128673.png" /></td><td>🚡</td><td><a href="http://www.fileformat.info/info/unicode/char/1F6A1/index.htm" target="_blank">1F6A1</a></td><td>F09F9AA1</td><td>D83DDEA1</td><td></td><td></td><td></td></tr>
+<tr><td>607</td><td><img src="img/128671.png" /></td><td>🚟</td><td><a href="http://www.fileformat.info/info/unicode/char/1F69F/index.htm" target="_blank">1F69F</a></td><td>F09F9A9F</td><td>D83DDE9F</td><td></td><td></td><td></td></tr>
+<tr><td>608</td><td><img src="img/128672.png" /></td><td>🚠</td><td><a href="http://www.fileformat.info/info/unicode/char/1F6A0/index.htm" target="_blank">1F6A0</a></td><td>F09F9AA0</td><td>D83DDEA0</td><td></td><td></td><td></td></tr>
+<tr><td>609</td><td><img src="img/128668.png" /></td><td>🚜</td><td><a href="http://www.fileformat.info/info/unicode/char/1F69C/index.htm" target="_blank">1F69C</a></td><td>F09F9A9C</td><td>D83DDE9C</td><td></td><td></td><td></td></tr>
+<tr><td>610</td><td><img src="img/128136.png" /></td><td>[床屋]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F488/index.htm" target="_blank">1F488</a></td><td>F09F9288</td><td>D83DDC88</td><td></td><td>EE8CA0</td><td>EEB1B5</td></tr>
+<tr><td>611</td><td><img src="img/128655.png" /></td><td>[バス停]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F68F/index.htm" target="_blank">1F68F</a></td><td>F09F9A8F</td><td>D83DDE8F</td><td></td><td>EE8590</td><td>EEBE80</td></tr>
+<tr><td>612</td><td><img src="img/127915.png" /></td><td>[チケット]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F3AB/index.htm" target="_blank">1F3AB</a></td><td>F09F8EAB</td><td>D83CDFAB</td><td>EE99BE</td><td>EE84A5</td><td>EEBDB6</td></tr>
+<tr><td>613</td><td><img src="img/128678.png" /></td><td>🚦</td><td><a href="http://www.fileformat.info/info/unicode/char/1F6A6/index.htm" target="_blank">1F6A6</a></td><td>F09F9AA6</td><td>D83DDEA6</td><td></td><td></td><td></td></tr>
+<tr><td>614</td><td><img src="img/128677.png" /></td><td>[信号]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F6A5/index.htm" target="_blank">1F6A5</a></td><td>F09F9AA5</td><td>D83DDEA5</td><td>EE99AD</td><td>EE858E</td><td>EEBD82</td></tr>
+<tr><td>615</td><td><img src="img/9888.png" /></td><td>[危険・警告]</td><td><a href="http://www.fileformat.info/info/unicode/char/26A0/index.htm" target="_blank">26A0</a></td><td>E29AA0</td><td>26A0</td><td>EE9CB7</td><td>EE8992</td><td>EEBD99</td></tr>
+<tr><td>616</td><td><img src="img/128679.png" /></td><td>[工事中]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F6A7/index.htm" target="_blank">1F6A7</a></td><td>F09F9AA7</td><td>D83DDEA7</td><td></td><td>EE84B7</td><td>EEB18A</td></tr>
+<tr><td>617</td><td><img src="img/128304.png" /></td><td>[若葉マーク]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F530/index.htm" target="_blank">1F530</a></td><td>F09F94B0</td><td>D83DDD30</td><td></td><td>EE8889</td><td>EEBD98</td></tr>
+<tr><td>618</td><td><img src="img/9981.png" /></td><td>[ガソリンスタンド]</td><td><a href="http://www.fileformat.info/info/unicode/char/26FD/index.htm" target="_blank">26FD</a></td><td>E29BBD</td><td>26FD</td><td>EE99AB</td><td>EE80BA</td><td>EF828E</td></tr>
+<tr><td>619</td><td><img src="img/127982.png" /></td><td>[居酒屋（赤ちょうちん）]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F3EE/index.htm" target="_blank">1F3EE</a></td><td>F09F8FAE</td><td>D83CDFEE</td><td>EE9D8B</td><td>EE8C8B</td><td>EEBE96</td></tr>
+<tr><td>620</td><td><img src="img/127920.png" /></td><td>[777]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F3B0/index.htm" target="_blank">1F3B0</a></td><td>F09F8EB0</td><td>D83CDFB0</td><td></td><td>EE84B3</td><td>EEBD86</td></tr>
+<tr><td>621</td><td><img src="img/9832.png" /></td><td>[いい気分（温泉）]</td><td><a href="http://www.fileformat.info/info/unicode/char/2668/index.htm" target="_blank">2668</a></td><td>E299A8</td><td>2668</td><td>EE9BB7</td><td>EE84A3</td><td>EEBE95</td></tr>
+<tr><td>622</td><td><img src="img/128511.png" /></td><td>[モアイ]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F5FF/index.htm" target="_blank">1F5FF</a></td><td>F09F97BF</td><td>D83DDDFF</td><td></td><td></td><td>EEB5B0</td></tr>
+<tr><td>623</td><td><img src="img/127914.png" /></td><td>[イベント]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F3AA/index.htm" target="_blank">1F3AA</a></td><td>F09F8EAA</td><td>D83CDFAA</td><td>EE99BD</td><td></td><td>EF82BB</td></tr>
+<tr><td>624</td><td><img src="img/127917.png" /></td><td>[演劇]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F3AD/index.htm" target="_blank">1F3AD</a></td><td>F09F8EAD</td><td>D83CDFAD</td><td></td><td>EE9483</td><td>EF82BA</td></tr>
+<tr><td>625</td><td><img src="img/128205.png" /></td><td>[画びょう]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F4CD/index.htm" target="_blank">1F4CD</a></td><td>F09F938D</td><td>D83DDCCD</td><td></td><td></td><td>EF81BC</td></tr>
+<tr><td>626</td><td><img src="img/128681.png" /></td><td>[旗]</td><td><a href="http://www.fileformat.info/info/unicode/char/1F6A9/index.htm" target="_blank">1F6A9</a></td><td>F09F9AA9</td><td>D83DDEA9</td><td>EE9B9E</td><td></td><td>EEB3AD</td></tr>
+<tr><td>627</td><td><img src="img/127471.png" /></td><td>🇯</td><td><a href="http://www.fileformat.info/info/unicode/char/1F1EF/index.htm" target="_blank">1F1EF</a></td><td>F09F87AF</td><td>D83CDDEF</td><td></td><td></td><td></td></tr>
+<tr><td>628</td><td><img src="img/127477.png" /></td><td>🇵</td><td><a href="http://www.fileformat.info/info/unicode/char/1F1F5/index.htm" target="_blank">1F1F5</a></td><td>F09F87B5</td><td>D83CDDF5</td><td></td><td></td><td></td></tr>
+<tr><td>629</td><td><img src="img/127472.png" /></td><td>🇰</td><td><a href="http://www.fileformat.info/info/unicode/char/1F1F0/index.htm" target="_blank">1F1F0</a></td><td>F09F87B0</td><td>D83CDDF0</td><td></td><td></td><td></td></tr>
+<tr><td>630</td><td><img src="img/127479.png" /></td><td>🇷</td><td><a href="http://www.fileformat.info/info/unicode/char/1F1F7/index.htm" target="_blank">1F1F7</a></td><td>F09F87B7</td><td>D83CDDF7</td><td></td><td></td><td></td></tr>
+<tr><td>631</td><td><img src="img/127465.png" /></td><td>🇩</td><td><a href="http://www.fileformat.info/info/unicode/char/1F1E9/index.htm" target="_blank">1F1E9</a></td><td>F09F87A9</td><td>D83CDDE9</td><td></td><td></td><td></td></tr>
+<tr><td>632</td><td><img src="img/127466.png" /></td><td>🇪</td><td><a href="http://www.fileformat.info/info/unicode/char/1F1EA/index.htm" target="_blank">1F1EA</a></td><td>F09F87AA</td><td>D83CDDEA</td><td></td><td></td><td></td></tr>
+<tr><td>633</td><td><img src="img/127464.png" /></td><td>🇨</td><td><a href="http://www.fileformat.info/info/unicode/char/1F1E8/index.htm" target="_blank">1F1E8</a></td><td>F09F87A8</td><td>D83CDDE8</td><td></td><td></td><td></td></tr>
+<tr><td>634</td><td><img src="img/127475.png" /></td><td>🇳</td><td><a href="http://www.fileformat.info/info/unicode/char/1F1F3/index.htm" target="_blank">1F1F3</a></td><td>F09F87B3</td><td>D83CDDF3</td><td></td><td></td><td></td></tr>
+<tr><td>635</td><td><img src="img/127482.png" /></td><td>🇺</td><td><a href="http://www.fileformat.info/info/unicode/char/1F1FA/index.htm" target="_blank">1F1FA</a></td><td>F09F87BA</td><td>D83CDDFA</td><td></td><td></td><td></td></tr>
+<tr><td>636</td><td><img src="img/127480.png" /></td><td>🇸</td><td><a href="http://www.fileformat.info/info/unicode/char/1F1F8/index.htm" target="_blank">1F1F8</a></td><td>F09F87B8</td><td>D83CDDF8</td><td></td><td></td><td></td></tr>
+<tr><td>637</td><td><img src="img/127467.png" /></td><td>🇫</td><td><a href="http://www.fileformat.info/info/unicode/char/1F1EB/index.htm" target="_blank">1F1EB</a></td><td>F09F87AB</td><td>D83CDDEB</td><td></td><td></td><td></td></tr>
+<tr><td>638</td><td><img src="img/127479.png" /></td><td>🇷</td><td><a href="http://www.fileformat.info/info/unicode/char/1F1F7/index.htm" target="_blank">1F1F7</a></td><td>F09F87B7</td><td>D83CDDF7</td><td></td><td></td><td></td></tr>
+<tr><td>639</td><td><img src="img/127466.png" /></td><td>🇪</td><td><a href="http://www.fileformat.info/info/unicode/char/1F1EA/index.htm" target="_blank">1F1EA</a></td><td>F09F87AA</td><td>D83CDDEA</td><td></td><td></td><td></td></tr>
+<tr><td>640</td><td><img src="img/127480.png" /></td><td>🇸</td><td><a href="http://www.fileformat.info/info/unicode/char/1F1F8/index.htm" target="_blank">1F1F8</a></td><td>F09F87B8</td><td>D83CDDF8</td><td></td><td></td><td></td></tr>
+<tr><td>641</td><td><img src="img/127470.png" /></td><td>🇮</td><td><a href="http://www.fileformat.info/info/unicode/char/1F1EE/index.htm" target="_blank">1F1EE</a></td><td>F09F87AE</td><td>D83CDDEE</td><td></td><td></td><td></td></tr>
+<tr><td>642</td><td><img src="img/127481.png" /></td><td>🇹</td><td><a href="http://www.fileformat.info/info/unicode/char/1F1F9/index.htm" target="_blank">1F1F9</a></td><td>F09F87B9</td><td>D83CDDF9</td><td></td><td></td><td></td></tr>
+<tr><td>643</td><td><img src="img/127479.png" /></td><td>🇷</td><td><a href="http://www.fileformat.info/info/unicode/char/1F1F7/index.htm" target="_blank">1F1F7</a></td><td>F09F87B7</td><td>D83CDDF7</td><td></td><td></td><td></td></tr>
+<tr><td>644</td><td><img src="img/127482.png" /></td><td>🇺</td><td><a href="http://www.fileformat.info/info/unicode/char/1F1FA/index.htm" target="_blank">1F1FA</a></td><td>F09F87BA</td><td>D83CDDFA</td><td></td><td></td><td></td></tr>
+<tr><td>645</td><td><img src="img/127468.png" /></td><td>🇬</td><td><a href="http://www.fileformat.info/info/unicode/char/1F1EC/index.htm" target="_blank">1F1EC</a></td><td>F09F87AC</td><td>D83CDDEC</td><td></td><td></td><td></td></tr>
+<tr><td>646</td><td><img src="img/127463.png" /></td><td>🇧</td><td><a href="http://www.fileformat.info/info/unicode/char/1F1E7/index.htm" target="_blank">1F1E7</a></td><td>F09F87A7</td><td>D83CDDE7</td><td></td><td></td><td></td></tr>
+                </tbody>
+            </table>
+            </section>
+        </div> 
+    </body>
+</html>
