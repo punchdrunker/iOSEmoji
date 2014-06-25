@@ -1,0 +1,2 @@
+requires 'Encode::JP::Emoji';
+requires 'Data::Dumper';
